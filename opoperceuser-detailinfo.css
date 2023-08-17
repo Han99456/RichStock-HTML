@@ -2023,7 +2023,7 @@
 .opoperceuser-detailinfo-stock3 {
   width: 1536px;
   height: 120px;
-  display: flex;
+  display: none;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
