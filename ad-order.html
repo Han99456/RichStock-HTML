@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock</title>
+    <meta property="og:title" content="↗ Rich Stock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./ad-order.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="ad-order-container">
+        <div class="ad-order-container01">
+          <div class="ad-order-sub-menu">
+            <div class="ad-order-small-header">
+              <div class="ad-order-frame33">
+                <span class="ad-order-text hoverbtnSubmenublacktext">
+                  종합주문
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="user-info-user-info">
+            <div class="user-info-frame15">
+              <div class="user-info-container">
+                <span class="user-info-text"><span>계좌코드 :</span></span>
+                <span id="topAccCode" class="user-info-text1">
+                  <span>-</span>
+                </span>
+                <span id="topuserid2" class="user-info-text2">
+                  <span>-</span>
+                </span>
+              </div>
+              <div class="user-info-container1">
+                <div class="user-info-container2">
+                  <img
+                    alt="AppTitleundefinedGlyphundefined1345"
+                    src="public/external/apptitleundefinedglyphundefined1345-a8pr.svg"
+                    class="user-info-app-titleundefined-glyphundefined"
+                  />
+                  <span class="user-info-text3">
+                    <span>주문가능금액 :</span>
+                  </span>
+                  <span id="topav" class="user-info-text4"><span>-</span></span>
+                </div>
+                <div class="user-info-container3">
+                  <img
+                    alt="AppTitleundefinedGlyphundefined1345"
+                    src="public/external/apptitleundefinedglyphundefined1345-fkje.svg"
+                    class="user-info-app-titleundefined-glyphundefined1"
+                  />
+                  <span class="user-info-text5">
+                    <span>평가금액합계 :</span>
+                  </span>
+                  <span id="topmrg" class="user-info-text6">
+                    <span>-</span>
+                  </span>
+                </div>
+                <div class="user-info-container4">
+                  <img
+                    alt="AppTitleundefinedGlyphundefined1345"
+                    src="public/external/apptitleundefinedglyphundefined1345-fkje.svg"
+                    class="user-info-app-titleundefined-glyphundefined2"
+                  />
+                  <span class="user-info-text7"><span>예탁금 :</span></span>
+                  <span id="topdep" class="user-info-text8">
+                    <span>-</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="noAPI" class="ad-order-table-alret">
+            <div class="ad-order-container02">
+              <span class="ad-order-text001">
+                <span>리치스탁 정규 운영시간 [08:40~16:00]</span>
+                <span class="ad-order-text003">
+                  이 아닐 경우, 거래소 서버가 불안정 할 수 있습니다.
+                </span>
+                <br class="ad-order-text004" />
+                <span class="ad-order-text005">
+                  유저의 보유종목/ 통장 정보의 확인과 통상적인 운영은
+                  진행되지만, 실시간 종목 정보의 연동은 어려울 수 있습니다.
+                </span>
+              </span>
+            </div>
+            <div class="ad-order-container03"></div>
+          </div>
+          <div id="loadingstock" class="ad-order-container04">
+            <div class="ad-order-container05">
+              <span class="ad-order-text006 loadingtext1">
+                거래소 데이터를 실시간 매칭 중 입니다.
+              </span>
+            </div>
+          </div>
+          <div class="ad-order-name">
+            <div class="ad-order-top">
+              <div class="ad-order-title">
+                <div class="ad-order-container06">
+                  <div class="ad-order-container07">
+                    <svg viewBox="0 0 1024 1024" class="ad-order-icon">
+                      <path
+                        d="M726 598l212 212-62 64-214-214v-32l-12-12q-32 26-85 46t-95 20q-80 0-142-38l64-62q40 16 78 16 80 0 136-56t56-136-56-136-136-56-136 56-56 136h148l-176 170-164-170h106q0-114 82-196t196-82q116 0 197 81t81 197q0 42-20 95t-48 85l12 12h34z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="ad-order-blank"></div>
+                  <div class="ad-order-container08">
+                    <span id="name" class="ad-order-text007">-</span>
+                  </div>
+                  <div class="ad-order-blank1"></div>
+                  <div class="ad-order-container09">
+                    <span class="ad-order-text008">|&nbsp;</span>
+                  </div>
+                  <div class="ad-order-container10">
+                    <span id="code" class="ad-order-text009">-</span>
+                  </div>
+                </div>
+                <div class="ad-order-container11">
+                  <span id="cprice" class="ad-order-text010">-</span>
+                </div>
+                <div class="ad-order-container12"></div>
+                <div class="ad-order-container13">
+                  <div class="ad-order-container14">
+                    <span class="ad-order-text011"><span>전일대비</span></span>
+                  </div>
+                  <div class="ad-order-container15">
+                    <span id="diff" class="ad-order-text013">-</span>
+                  </div>
+                  <div class="ad-order-blank2"></div>
+                  <div class="ad-order-container16">
+                    <span id="diffPer" class="ad-order-text014">-</span>
+                  </div>
+                  <div id="requeststock" class="ad-order-frame-bg hoverbtnblue">
+                    <span class="ad-order-text015">
+                      <span>관심종목등록</span>
+                    </span>
+                    <img
+                      alt="AppsAddInundefinedGlyphundefined1333"
+                      src="public/external/appsaddinundefinedglyphundefined1333-raa.svg"
+                      class="ad-order-apps-add-inundefined-glyphundefined"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="ad-order-space"></div>
+              <div class="ad-order-title1">
+                <div class="ad-order-table-title">
+                  <div class="ad-order-notice">
+                    <span class="ad-order-text017">보유종목</span>
+                  </div>
+                </div>
+                <span class="ad-order-text018">
+                  ※ 종목을 선택하시면 해당 종목으로 변경됩니다.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="ad-order-container17">
+            <div class="ad-order-space1">
+              <div class="ad-order-text019">
+                <div class="ad-order-frame132">
+                  <span class="ad-order-text020"><span>매도잔량</span></span>
+                  <span class="ad-order-text022"><span>호가</span></span>
+                  <span class="ad-order-text024"><span>전일비</span></span>
+                  <span class="ad-order-text026"><span>매수잔량</span></span>
+                </div>
+                <div class="ad-order-stock-10">
+                  <div class="ad-order-center">
+                    <div class="ad-order-frame15">
+                      <span
+                        id="offer10"
+                        class="ad-order-text028 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday10" class="ad-order-text029">
+                        +4.56%
+                      </span>
+                    </div>
+                    <div class="ad-order-frame91">
+                      <span
+                        id="offer9"
+                        class="ad-order-text030 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday9" class="ad-order-text031">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame94">
+                      <span
+                        id="offer8"
+                        class="ad-order-text033 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday8" class="ad-order-text034">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame95">
+                      <span
+                        id="offer7"
+                        class="ad-order-text036 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday7" class="ad-order-text037">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame97">
+                      <span
+                        id="offer6"
+                        class="ad-order-text039 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday6" class="ad-order-text040">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame100">
+                      <span
+                        id="offer5"
+                        class="ad-order-text042 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday5" class="ad-order-text043">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame101">
+                      <span
+                        id="offer4"
+                        class="ad-order-text045 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday4" class="ad-order-text046">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame106">
+                      <span
+                        id="offer3"
+                        class="ad-order-text048 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday3" class="ad-order-text049">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame105">
+                      <span
+                        id="offer2"
+                        class="ad-order-text051 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday2" class="ad-order-text052">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame107">
+                      <span
+                        id="offer1"
+                        class="ad-order-text054 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="offeryesterday1" class="ad-order-text055">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame68">
+                      <span
+                        id="bid1"
+                        class="ad-order-text057 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday1" class="ad-order-text058">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame69">
+                      <span
+                        id="bid2"
+                        class="ad-order-text060 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday2" class="ad-order-text061">
+                        <span>0.00%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame71">
+                      <span
+                        id="bid3"
+                        class="ad-order-text063 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday3" class="ad-order-text064">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame109">
+                      <span
+                        id="bid4"
+                        class="ad-order-text066 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday4" class="ad-order-text067">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame110">
+                      <span
+                        id="bid5"
+                        class="ad-order-text069 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday5" class="ad-order-text070">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame111">
+                      <span
+                        id="bid6"
+                        class="ad-order-text072 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday6" class="ad-order-text073">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame112">
+                      <span
+                        id="bid7"
+                        class="ad-order-text075 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday7" class="ad-order-text076">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame113">
+                      <span
+                        id="bid8"
+                        class="ad-order-text078 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday8" class="ad-order-text079">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame114">
+                      <span
+                        id="bid9"
+                        class="ad-order-text081 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday9" class="ad-order-text082">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                    <div class="ad-order-frame115">
+                      <span
+                        id="bid10"
+                        class="ad-order-text084 hoverbtnSubmenublacktext"
+                      >
+                        -
+                      </span>
+                      <span id="bidyesterday10" class="ad-order-text085">
+                        <span>+4.56%</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="ad-order-right-bottom">
+                    <div class="ad-order-frame36">
+                      <div id="bidvolper1" class="ad-order-container18"></div>
+                      <span id="bidvol1" class="ad-order-text087">-</span>
+                    </div>
+                    <div class="ad-order-frame70">
+                      <div id="bidvolper2" class="ad-order-container19"></div>
+                      <span id="bidvol2" class="ad-order-text088">-</span>
+                    </div>
+                    <div class="ad-order-frame87">
+                      <div id="bidvolper3" class="ad-order-container20"></div>
+                      <span id="bidvol3" class="ad-order-text089">-</span>
+                    </div>
+                    <div class="ad-order-frame88">
+                      <div id="bidvolper4" class="ad-order-container21"></div>
+                      <span id="bidvol4" class="ad-order-text090">-</span>
+                    </div>
+                    <div class="ad-order-frame116">
+                      <div id="bidvolper7" class="ad-order-container22"></div>
+                      <span id="bidvol7" class="ad-order-text091">-</span>
+                    </div>
+                    <div class="ad-order-frame89">
+                      <div id="bidvolper5" class="ad-order-container23"></div>
+                      <span id="bidvol5" class="ad-order-text092">-</span>
+                    </div>
+                    <div class="ad-order-frame117">
+                      <div id="bidvolper8" class="ad-order-container24"></div>
+                      <span id="bidvol8" class="ad-order-text093">-</span>
+                    </div>
+                    <div class="ad-order-frame90">
+                      <div id="bidvolper6" class="ad-order-container25"></div>
+                      <span id="bidvol6" class="ad-order-text094">-</span>
+                    </div>
+                    <div class="ad-order-frame118">
+                      <div id="bidvolper9" class="ad-order-container26"></div>
+                      <span id="bidvol9" class="ad-order-text095">-</span>
+                    </div>
+                    <div class="ad-order-frame119">
+                      <div id="bidvolper10" class="ad-order-container27"></div>
+                      <span id="bidvol10" class="ad-order-text096">-</span>
+                    </div>
+                  </div>
+                  <div class="ad-order-righttop"></div>
+                  <div class="ad-order-left">
+                    <div class="ad-order-group-top">
+                      <div class="ad-order-frame14">
+                        <div
+                          id="offervolper10"
+                          class="ad-order-container28"
+                        ></div>
+                        <span id="offervol10" class="ad-order-text097">-</span>
+                      </div>
+                      <div class="ad-order-frame901">
+                        <div
+                          id="offervolper9"
+                          class="ad-order-container29"
+                        ></div>
+                        <span id="offervol9" class="ad-order-text098">-</span>
+                      </div>
+                      <div class="ad-order-frame92">
+                        <div
+                          id="offervolper8"
+                          class="ad-order-container30"
+                        ></div>
+                        <span id="offervol8" class="ad-order-text099">-</span>
+                      </div>
+                      <div class="ad-order-frame93">
+                        <div
+                          id="offervolper7"
+                          class="ad-order-container31"
+                        ></div>
+                        <span id="offervol7" class="ad-order-text100">-</span>
+                      </div>
+                      <div class="ad-order-frame96">
+                        <div
+                          id="offervolper6"
+                          class="ad-order-container32"
+                        ></div>
+                        <span id="offervol6" class="ad-order-text101">-</span>
+                      </div>
+                      <div class="ad-order-frame98">
+                        <div
+                          id="offervolper5"
+                          class="ad-order-container33"
+                        ></div>
+                        <span id="offervol5" class="ad-order-text102">-</span>
+                      </div>
+                      <div class="ad-order-frame99">
+                        <div
+                          id="offervolper4"
+                          class="ad-order-container34"
+                        ></div>
+                        <span id="offervol4" class="ad-order-text103">-</span>
+                      </div>
+                      <div class="ad-order-frame102">
+                        <div
+                          id="offervolper3"
+                          class="ad-order-container35"
+                        ></div>
+                        <span id="offervol3" class="ad-order-text104">-</span>
+                      </div>
+                      <div class="ad-order-frame103">
+                        <div
+                          id="offervolper2"
+                          class="ad-order-container36"
+                        ></div>
+                        <span id="offervol2" class="ad-order-text105">-</span>
+                      </div>
+                      <div class="ad-order-frame104">
+                        <div
+                          id="offervolper1"
+                          class="ad-order-container37"
+                        ></div>
+                        <span id="offervol1" class="ad-order-text106">-</span>
+                      </div>
+                    </div>
+                    <div class="ad-order-righttop1">
+                      <div class="ad-order-frame148">
+                        <span class="ad-order-text107"><span>12</span></span>
+                        <span class="ad-order-text109">3</span>
+                        <span class="ad-order-text110">2</span>
+                        <span class="ad-order-text111">4</span>
+                        <span class="ad-order-text112">5</span>
+                        <span class="ad-order-text113">3</span>
+                        <span class="ad-order-text114"><span>15</span></span>
+                        <span class="ad-order-text116"><span>28</span></span>
+                        <span class="ad-order-text118">9</span>
+                        <span class="ad-order-text119">8</span>
+                        <span class="ad-order-text120">1</span>
+                        <span class="ad-order-text121">5</span>
+                        <span class="ad-order-text122">8</span>
+                        <span class="ad-order-text123">1</span>
+                        <span class="ad-order-text124"><span>68</span></span>
+                        <span class="ad-order-text126"><span>12</span></span>
+                        <span class="ad-order-text128">1</span>
+                        <span class="ad-order-text129">5</span>
+                        <span class="ad-order-text130">4</span>
+                      </div>
+                      <div class="ad-order-frame147">
+                        <span class="ad-order-text131">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text133">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text135">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text137">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text139">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text141">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text143">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text145">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text147">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text149">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text151">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text153">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text155">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text157">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text159">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text161">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text163">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text165">
+                          <span>56,000</span>
+                        </span>
+                        <span class="ad-order-text167">
+                          <span>56,000</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ad-order-bottom-footer2">
+                    <span id="offervoltotal" class="ad-order-text169">-</span>
+                    <div class="ad-order-frame881">
+                      <span id="time" class="ad-order-text170">-</span>
+                    </div>
+                    <div class="ad-order-frame891">
+                      <span id="bidvoltotal" class="ad-order-text171">-</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ad-order-space2"></div>
+              <div class="ad-order-center1">
+                <div class="ad-order-top1">
+                  <div class="ad-order-frame145">
+                    <span class="ad-order-text172"><span>거래량</span></span>
+                    <span class="ad-order-text174"><span>전거</span></span>
+                    <span class="ad-order-text176">체결강도</span>
+                    <span class="ad-order-text177"><span>전종</span></span>
+                    <span class="ad-order-text179"><span>시가</span></span>
+                    <span class="ad-order-text181"><span>고가</span></span>
+                    <span class="ad-order-text183"><span>저가</span></span>
+                    <span class="ad-order-text185"><span>매도호가</span></span>
+                    <span class="ad-order-text187"><span>매수호가</span></span>
+                    <span class="ad-order-text189"><span>상한가</span></span>
+                    <span class="ad-order-text191"><span>하한가</span></span>
+                    <span class="ad-order-text193"><span>52주 고가</span></span>
+                    <span class="ad-order-text195">
+                      <span>52주 최고일</span>
+                    </span>
+                    <span class="ad-order-text197"><span>52주 저가</span></span>
+                    <span class="ad-order-text199">
+                      <span>52주 최저일</span>
+                    </span>
+                  </div>
+                  <div class="ad-order-frame146">
+                    <span id="obv" class="ad-order-text201">-</span>
+                    <span id="obvPer" class="ad-order-text202">-</span>
+                    <span id="pvol" class="ad-order-text203">-</span>
+                    <span id="vpower" class="ad-order-text204">-</span>
+                    <span id="prevPrice" class="ad-order-text205">-</span>
+                    <span id="openPrice" class="ad-order-text206">-</span>
+                    <span id="highPrice" class="ad-order-text207">-</span>
+                    <span id="lowPrice" class="ad-order-text208">-</span>
+                    <span id="bidPrice" class="ad-order-text209">-</span>
+                    <span id="askPrice" class="ad-order-text210">-</span>
+                    <span id="ulPrice" class="ad-order-text211">-</span>
+                    <span id="llPrice" class="ad-order-text212">-</span>
+                    <span id="wHigh" class="ad-order-text213">-</span>
+                    <span id="wHigh2" class="ad-order-text214">-</span>
+                    <span id="wLow" class="ad-order-text215">-</span>
+                    <span id="wLow2" class="ad-order-text216">-</span>
+                  </div>
+                </div>
+                <div class="ad-order-tabmenu tab_menu">
+                  <div class="ad-order-cont-area tab_inner_wrap">
+                    <div class="ad-order-take-03 tab_inner">
+                      <div class="ad-order-top2">
+                        <div class="ad-order-frame127">
+                          <span class="ad-order-text217">매수</span>
+                        </div>
+                        <div class="ad-order-frame128">
+                          <span class="ad-order-text218">매도</span>
+                        </div>
+                        <div class="ad-order-frame129">
+                          <span class="ad-order-text219">
+                            <span>주문확인</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ad-order-container38">
+                        <span class="ad-order-text221">주문가능금액 :</span>
+                        <span id="topav3" class="ad-order-text222">-</span>
+                      </div>
+                      <div class="ad-order-container39"></div>
+                      <div class="ad-order-table-3">
+                        <div class="ad-order-table-top">
+                          <img
+                            alt="Rectangle1271"
+                            src="public/external/rectangle1271-lkb6-200h.png"
+                            class="ad-order-rectangle"
+                          />
+                          <div class="ad-order-container40">
+                            <span class="ad-order-text223">선택</span>
+                            <span class="ad-order-text224">매매구분</span>
+                            <span class="ad-order-text225">종목명</span>
+                            <span class="ad-order-text226">수량</span>
+                            <span class="ad-order-text227">주문단가</span>
+                          </div>
+                        </div>
+                        <div
+                          id="table-stocksubmit"
+                          class="ad-order-container41 table-stocksubmit"
+                        ></div>
+                        <div
+                          id="empty03-submit"
+                          class="ad-order-container42 empty03-submit"
+                        >
+                          <div class="ad-order-container43">
+                            <span class="ad-order-text228">
+                              주문하신 내역이 없습니다.
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          id="dataloading3"
+                          class="ad-order-container44 dataloading3"
+                        >
+                          <span class="ad-order-text229 loadingtext1">
+                            고객님의 데이터를 불러오는 중입니다.
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ad-order-container45">
+                        <div class="ad-order-group19">
+                          <div
+                            id="cancel"
+                            class="ad-order-frame123 Modal3Setting hoverbtnred"
+                          >
+                            <span class="ad-order-text230">주문취소</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ad-order-take-02 tab_inner">
+                      <div class="ad-order-top3">
+                        <div class="ad-order-frame1271">
+                          <span class="ad-order-text231">매수</span>
+                        </div>
+                        <div class="ad-order-frame1281">
+                          <span class="ad-order-text232">매도</span>
+                        </div>
+                        <div class="ad-order-frame1291">
+                          <span class="ad-order-text233">
+                            <span>주문확인</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ad-order-container46">
+                        <span class="ad-order-text235">보유 수량 :&nbsp;</span>
+                        <span id="topav2" class="ad-order-text236">-</span>
+                      </div>
+                      <div class="ad-order-container47">
+                        <div
+                          id="sellmax"
+                          class="ad-order-container48 hoverbtnwhite"
+                        >
+                          <span class="ad-order-text237">MAX</span>
+                        </div>
+                      </div>
+                      <div class="ad-order-frame122">
+                        <div class="ad-order-frame1221">
+                          <div class="ad-order-frame130">
+                            <div class="ad-order-container49">
+                              <div
+                                id="sell1minus"
+                                class="ad-order-container50 hoverbtnwhite"
+                              >
+                                <input
+                                  type="button"
+                                  placeholder="placeholder"
+                                  class="ad-order-input input"
+                                />
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="ad-order-icon02"
+                                >
+                                  <path d="M810 554h-596v-84h596v84z"></path>
+                                </svg>
+                              </div>
+                              <input
+                                type="number"
+                                id="sellstock1"
+                                value="1"
+                                onkeyup="buyStockInputOnchange2()"
+                                placeholder="0"
+                                class="ad-order-input-id input"
+                              />
+                              <div
+                                id="sell1plus"
+                                class="ad-order-container51 hoverbtnwhite"
+                              >
+                                <input
+                                  type="button"
+                                  placeholder="placeholder"
+                                  class="ad-order-input01 input"
+                                />
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="ad-order-icon04"
+                                >
+                                  <path
+                                    d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                            <span class="ad-order-text238">
+                              <span>수량</span>
+                            </span>
+                          </div>
+                          <div class="ad-order-frame131">
+                            <span class="ad-order-text240">
+                              <span>가격</span>
+                            </span>
+                            <span
+                              id="sellmarketbtn"
+                              onclick="changeopenprice2()"
+                              class="ad-order-text242"
+                            >
+                              <span>시장가</span>
+                            </span>
+                            <div class="ad-order-container52">
+                              <div
+                                id="sell2minus"
+                                class="ad-order-container53 hoverbtnwhite"
+                              >
+                                <input
+                                  type="button"
+                                  placeholder="placeholder"
+                                  class="ad-order-input02 input"
+                                />
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="ad-order-icon06"
+                                >
+                                  <path d="M810 554h-596v-84h596v84z"></path>
+                                </svg>
+                              </div>
+                              <input
+                                type="number"
+                                id="sellstock2"
+                                onkeyup="buyStockInputOnchange2()"
+                                placeholder="0"
+                                class="ad-order-input-id1 input"
+                              />
+                              <div
+                                id="sell2plus"
+                                class="ad-order-container54 hoverbtnwhite"
+                              >
+                                <input
+                                  type="button"
+                                  placeholder="placeholder"
+                                  class="ad-order-input03 input"
+                                />
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="ad-order-icon08"
+                                >
+                                  <path
+                                    d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"
+                                  ></path>
+                                </svg>
+                              </div>
+                              <div
+                                id="sell2minusblock"
+                                class="ad-order-container55 hoverbtnwhite"
+                              >
+                                <input
+                                  type="button"
+                                  placeholder="placeholder"
+                                  class="ad-order-input04 input"
+                                />
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="ad-order-icon10"
+                                >
+                                  <path d="M810 554h-596v-84h596v84z"></path>
+                                </svg>
+                              </div>
+                              <div
+                                id="sell2plusBlock"
+                                class="ad-order-container56 hoverbtnwhite"
+                              >
+                                <input
+                                  type="button"
+                                  placeholder="placeholder"
+                                  class="ad-order-input05 input"
+                                />
+                                <svg
+                                  viewBox="0 0 1024 1024"
+                                  class="ad-order-icon12"
+                                >
+                                  <path
+                                    d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ad-order-container57"></div>
+                      <div class="ad-order-group191">
+                        <div class="ad-order-container58">
+                          <div
+                            id="btn-modal2"
+                            class="ad-order-frame1231 hoverbtnred Modal2Setting"
+                          >
+                            <span id="sellstock3" class="ad-order-text244">
+                              -
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ad-order-take-01 tab_inner active">
+                      <div class="ad-order-top4">
+                        <div class="ad-order-frame1272">
+                          <span class="ad-order-text245">매수</span>
+                        </div>
+                        <div class="ad-order-frame1282">
+                          <span class="ad-order-text246">매도</span>
+                        </div>
+                        <div class="ad-order-frame1292">
+                          <span class="ad-order-text247">
+                            <span>주문확인</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ad-order-container59">
+                        <span class="ad-order-text249">주문가능금액 :</span>
+                        <span id="topav1" class="ad-order-text250">-</span>
+                      </div>
+                      <div class="ad-order-container60">
+                        <div id="buy30" class="ad-order-max hoverbtnwhite">
+                          <span class="ad-order-text251 hovetextgray">30%</span>
+                        </div>
+                        <div id="buy50" class="ad-order-max1 hoverbtnwhite">
+                          <span class="ad-order-text252 hovetextgray">50%</span>
+                        </div>
+                        <div id="buymax" class="ad-order-max2 hoverbtnwhite">
+                          <span class="ad-order-text253 hovetextgray">MAX</span>
+                        </div>
+                      </div>
+                      <div class="ad-order-frame1222">
+                        <div class="ad-order-frame1301">
+                          <div class="ad-order-container61">
+                            <div
+                              id="buy1minus"
+                              class="ad-order-container62 hoverbtnwhite"
+                            >
+                              <input
+                                type="button"
+                                placeholder="placeholder"
+                                class="ad-order-input06 input"
+                              />
+                              <svg
+                                viewBox="0 0 1024 1024"
+                                class="ad-order-icon14"
+                              >
+                                <path d="M810 554h-596v-84h596v84z"></path>
+                              </svg>
+                            </div>
+                            <input
+                              type="number"
+                              id="buystock1"
+                              value="1"
+                              onkeyup="buyStockInputOnchange()"
+                              placeholder="0"
+                              class="ad-order-input-id2 input"
+                            />
+                            <div
+                              id="buy1plus"
+                              class="ad-order-container63 hoverbtnwhite"
+                            >
+                              <input
+                                type="button"
+                                placeholder="placeholder"
+                                class="ad-order-input07 input"
+                              />
+                              <svg
+                                viewBox="0 0 1024 1024"
+                                class="ad-order-icon16"
+                              >
+                                <path
+                                  d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <span class="ad-order-text254">
+                            <span>수량</span>
+                          </span>
+                        </div>
+                        <div class="ad-order-frame1311">
+                          <div class="ad-order-container64">
+                            <div
+                              id="buy2minus"
+                              class="ad-order-container65 hoverbtnwhite"
+                            >
+                              <input
+                                type="button"
+                                placeholder="placeholder"
+                                class="ad-order-input08 input"
+                              />
+                              <svg
+                                viewBox="0 0 1024 1024"
+                                class="ad-order-icon18"
+                              >
+                                <path d="M810 554h-596v-84h596v84z"></path>
+                              </svg>
+                            </div>
+                            <input
+                              type="number"
+                              id="buystock2"
+                              onkeyup="buyStockInputOnchange()"
+                              placeholder="0"
+                              class="ad-order-input-id3 input"
+                            />
+                            <div
+                              id="buy2plus"
+                              class="ad-order-container66 hoverbtnwhite"
+                            >
+                              <input
+                                type="button"
+                                placeholder="placeholder"
+                                class="ad-order-input09 input"
+                              />
+                              <svg
+                                viewBox="0 0 1024 1024"
+                                class="ad-order-icon20"
+                              >
+                                <path
+                                  d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"
+                                ></path>
+                              </svg>
+                            </div>
+                            <div
+                              id="buy2minusblock"
+                              class="ad-order-container67 hoverbtnwhite"
+                            >
+                              <input
+                                type="button"
+                                placeholder="placeholder"
+                                class="ad-order-input10 input"
+                              />
+                              <svg
+                                viewBox="0 0 1024 1024"
+                                class="ad-order-icon22"
+                              >
+                                <path d="M810 554h-596v-84h596v84z"></path>
+                              </svg>
+                            </div>
+                            <div
+                              id="buy2plusBlock"
+                              class="ad-order-container68 hoverbtnwhite"
+                            >
+                              <input
+                                type="button"
+                                placeholder="placeholder"
+                                class="ad-order-input11 input"
+                              />
+                              <svg
+                                viewBox="0 0 1024 1024"
+                                class="ad-order-icon24"
+                              >
+                                <path
+                                  d="M810 554h-256v256h-84v-256h-256v-84h256v-256h84v256h256v84z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <span class="ad-order-text256">
+                            <span>가격</span>
+                          </span>
+                          <span
+                            id="buymarketbtn"
+                            onclick="changeopenprice()"
+                            class="ad-order-text258"
+                          >
+                            <span>시장가</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ad-order-container69"></div>
+                      <div class="ad-order-group192">
+                        <div class="ad-order-container70">
+                          <div
+                            id="btn-modal1"
+                            class="ad-order-frame1232 hoverbtnblue Modal1Setting"
+                          >
+                            <span id="buystock3" class="ad-order-text260">
+                              <span>-</span>
+                              <br />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="ad-order-ul tab list">
+                    <li
+                      id="getstocksubmit"
+                      onclick="postBaseInfo()"
+                      class="ad-order-li tab_item list-item"
+                    >
+                      <div class="ad-order-frame1293"></div>
+                    </li>
+                    <li id="sellbtn" class="ad-order-li1 tab_item list-item">
+                      <div class="ad-order-frame1283"></div>
+                    </li>
+                    <li
+                      id="buybtn"
+                      class="ad-order-li2 tab_item list-item active"
+                    >
+                      <div class="ad-order-frame1273"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ad-order-space3"></div>
+              <div class="ad-order-text263">
+                <div class="ad-order-table-4">
+                  <div class="ad-order-table-top1">
+                    <div class="ad-order-bg"></div>
+                    <div class="ad-order-container71">
+                      <span class="ad-order-text264">종목명</span>
+                      <span class="ad-order-text265">보유수량</span>
+                      <span class="ad-order-text266">매입금액</span>
+                      <span class="ad-order-text267">평가금액</span>
+                    </div>
+                  </div>
+                  <div
+                    id="empty02-stock"
+                    class="ad-order-container72 empty02-stock"
+                  >
+                    <div class="ad-order-container73">
+                      <span class="ad-order-text268">
+                        보유하신 종목이 없습니다.
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    id="dataloading5"
+                    class="ad-order-container74 dataloading5"
+                  >
+                    <span class="ad-order-text269 loadingtext1">
+                      고객님의 데이터를 불러오는 중입니다.
+                    </span>
+                  </div>
+                  <div class="ad-order-table-list">
+                    <div class="ad-order-container75 table-mystock">
+                      <div id="tablesampleB" class="ad-order-line-white">
+                        <div class="ad-order-bg1"></div>
+                        <div class="ad-order-text270">
+                          <span class="ad-order-text271">삼성생명</span>
+                          <span class="ad-order-text272">15,210,220 원</span>
+                          <span class="ad-order-text273">15,210,220 원</span>
+                          <span class="ad-order-text274">+1.5%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ad-order-line-end">
+                    <div class="ad-order-bg2"></div>
+                  </div>
+                  <div class="ad-order-page"></div>
+                </div>
+                <div class="ad-order-space4"></div>
+                <div class="ad-order-table-41">
+                  <div class="ad-order-table-title1">
+                    <div class="ad-order-notice1">
+                      <span class="ad-order-text275">관심종목</span>
+                    </div>
+                  </div>
+                  <div class="ad-order-table-top2">
+                    <div class="ad-order-bg3"></div>
+                    <div class="ad-order-container76">
+                      <span class="ad-order-text276">종목명</span>
+                      <span class="ad-order-text277">전일종가</span>
+                      <span class="ad-order-text278">현재가</span>
+                      <span class="ad-order-text279">전일비</span>
+                    </div>
+                  </div>
+                  <div
+                    id="empty03-interest"
+                    class="ad-order-container77 empty03-interest"
+                  >
+                    <div class="ad-order-container78">
+                      <span class="ad-order-text280">
+                        등록된 관심종목이 없습니다.
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    id="dataloading2"
+                    class="ad-order-container79 dataloading2"
+                  >
+                    <span class="ad-order-text281 loadingtext1">
+                      고객님의 데이터를 불러오는 중입니다.
+                    </span>
+                  </div>
+                  <div class="ad-order-table-list1">
+                    <div class="ad-order-container80 table-myinterest">
+                      <div id="tablesampleB" class="ad-order-line-white1">
+                        <div class="ad-order-bg4"></div>
+                        <div class="ad-order-text282">
+                          <span class="ad-order-text283">삼성생명</span>
+                          <span class="ad-order-text284">15,210,220 원</span>
+                          <span class="ad-order-text285">15,210,220 원</span>
+                          <span class="ad-order-text286">+1.5%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ad-order-line-end1">
+                    <div class="ad-order-bg5"></div>
+                  </div>
+                  <div class="ad-order-page1"></div>
+                </div>
+                <div class="ad-order-space5"></div>
+                <div class="ad-order-title2">
+                  <div class="ad-order-space6">
+                    <span class="ad-order-text287"><span>종목 조회</span></span>
+                    <img
+                      alt="Vector1882"
+                      src="public/external/vector1882-2vvt.svg"
+                      class="ad-order-vector"
+                    />
+                    <div class="ad-order-group16">
+                      <div class="ad-order-frame-bg1">
+                        <span class="ad-order-text289">
+                          <span class="ad-order-text290">
+                            <span>
+                              <span></span>
+                              <span></span>
+                            </span>
+                            <span>
+                              <span></span>
+                              <span></span>
+                            </span>
+                          </span>
+                          <span>조회</span>
+                        </span>
+                        <img
+                          alt="Vector1741"
+                          src="public/external/vector1741-5s1h.svg"
+                          class="ad-order-vector1"
+                        />
+                      </div>
+                    </div>
+                    <div class="ad-order-container81">
+                      <div class="ad-order-container82">
+                        <input
+                          type="text"
+                          id="searchstock"
+                          onchange="searchstock()"
+                          placeholder="종목명 또는 종목코드를 정확히 기입해주세요."
+                          class="ad-order-input-id4 input"
+                        />
+                      </div>
+                      <div
+                        onclick="searchstock()"
+                        class="ad-order-frame5 hoverbtnwhite"
+                      >
+                        <span class="ad-order-text298">조회</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ad-order-table-31">
+                  <div class="ad-order-table-title2">
+                    <div class="ad-order-notice2">
+                      <span class="ad-order-text299">종목 조회결과</span>
+                    </div>
+                  </div>
+                  <div class="ad-order-table-top3">
+                    <div class="ad-order-bg6"></div>
+                    <img
+                      alt="Rectangle1271"
+                      src="public/external/rectangle1271-lkb6-200h.png"
+                      class="ad-order-rectangle1"
+                    />
+                    <div class="ad-order-container83">
+                      <span class="ad-order-text300">종목명</span>
+                      <span class="ad-order-text301">전일종가</span>
+                      <span class="ad-order-text302">현재가</span>
+                      <span class="ad-order-text303">전일비</span>
+                    </div>
+                  </div>
+                  <div
+                    id="empty04-search"
+                    class="ad-order-container84 empty04-search"
+                  >
+                    <div class="ad-order-container85">
+                      <span class="ad-order-text304">
+                        조회 결과가 없습니다.
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    id="dataloading1"
+                    class="ad-order-container86 dataloading1"
+                  >
+                    <div class="ad-order-container87">
+                      <span class="ad-order-text305">
+                        조회하신 종목이 없습니다.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="ad-order-table-list2">
+                    <div class="ad-order-container88 table-search">
+                      <div id="tablesampleA" class="ad-order-line-white2">
+                        <div class="ad-order-bg7"></div>
+                        <div class="ad-order-text306">
+                          <span class="ad-order-text307">삼성생명</span>
+                          <span class="ad-order-text308">15,210,220 원</span>
+                          <span class="ad-order-text309">15,210,220 원</span>
+                          <span class="ad-order-text310">+1.5%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ad-order-line-end2">
+                    <div class="ad-order-bg8"></div>
+                  </div>
+                  <div class="ad-order-page2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modal1" class="ad-order-modal1 modal-overlay1">
+          <div class="ad-order-popup">
+            <img
+              alt="Rectangle21209"
+              src="public/external/rectangle21209-4h1-200h.png"
+              class="ad-order-rectangle2"
+            />
+            <div class="ad-order-info">
+              <img
+                alt="UnionI120"
+                src="public/external/unioni120-xae8.svg"
+                class="ad-order-union"
+              />
+            </div>
+            <span class="ad-order-text311">매수 주문 확인</span>
+            <div class="ad-order-container89">
+              <span id="buytext1" class="ad-order-text312">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="buytext2" class="ad-order-text315">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="buytext3" class="ad-order-text318">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="buytext4" class="ad-order-text321">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="buytext5" class="ad-order-text324">
+                <span>-</span>
+                <br />
+              </span>
+            </div>
+            <span class="ad-order-text327">
+              <span class="ad-order-text328">
+                위 내용으로 매수 주문을 진행합니까?
+              </span>
+              <br />
+            </span>
+            <div class="ad-order-container90">
+              <button
+                id="btn-buystock"
+                type="reset"
+                class="ad-order-button button hoverbtnblue"
+              >
+                진행
+              </button>
+              <button
+                type="reset"
+                class="ad-order-button1 btn-close-modal1 hoverbtnwhite button"
+              >
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="modal2" class="ad-order-modal2 modal-overlay2">
+          <div class="ad-order-popup1">
+            <img
+              alt="Rectangle21209"
+              src="public/external/rectangle21209-4h1-200h.png"
+              class="ad-order-rectangle21"
+            />
+            <div class="ad-order-info1">
+              <img
+                alt="UnionI120"
+                src="public/external/unioni120-xae8.svg"
+                class="ad-order-union1"
+              />
+            </div>
+            <span class="ad-order-text330">매도 주문 확인</span>
+            <div class="ad-order-container91">
+              <span id="selltext1" class="ad-order-text331">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="selltext2" class="ad-order-text334">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="selltext3" class="ad-order-text337">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="selltext4" class="ad-order-text340">
+                <span>-</span>
+                <br />
+              </span>
+              <span id="selltext5" class="ad-order-text343">
+                <span>-</span>
+                <br />
+              </span>
+            </div>
+            <span class="ad-order-text346">
+              <span>위 내용으로 매도 주문을 진행합니까?</span>
+              <br />
+            </span>
+            <div class="ad-order-container92">
+              <button
+                id="btn-sellstock"
+                type="reset"
+                class="ad-order-button2 hoverbtnred button"
+              >
+                진행
+              </button>
+              <button
+                type="reset"
+                class="ad-order-button3 hoverbtnwhite button btn-close-modal2"
+              >
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="ad-order-java-code-personal">
+          <div>
+            <dangerous-html
+              html="<link rel='stylesheet' href='css/order.css'>
+<link rel='stylesheet' href='css/Stock04.css'>
+    
+<script type='text/javascript' src='/js/stock0401order.js'> </script>
+<script type='text/javascript' src='/js/stock0401order-tablepc.js'> </script>
+<script type='text/javascript' src='/js/stock0401order-tablepc-tap.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <footer class="top-top">
+          <div class="top-container">
+            <div id="globaltext" class="top-container01">
+              <div class="top-group29">
+                <span class="top-text">KOSPI</span>
+                <span id="Bind1" class="top-text01">-</span>
+                <span id="Bind2" class="top-text02"><span>-</span></span>
+              </div>
+              <div class="top-group30">
+                <span class="top-text03"><span>KOSDAQ</span></span>
+                <span id="Bind3" class="top-text05">-</span>
+                <span id="Bind4" class="top-text06">-</span>
+              </div>
+              <div class="top-group31">
+                <span class="top-text07">NASDAQ</span>
+                <span id="Bind5" class="top-text08">-</span>
+                <span id="Bind6" class="top-text09">-</span>
+              </div>
+              <div class="top-group311">
+                <span class="top-text10">S&amp;P500</span>
+                <span id="Bind7" class="top-text11">-</span>
+                <span id="Bind8" class="top-text12">-</span>
+              </div>
+            </div>
+            <div class="top-container02"></div>
+          </div>
+          <div class="top-container03 dropdown1_Window">
+            <div class="top-container04">
+              <a href="af-trading1.html">
+                <div class="top-container05">
+                  <span class="top-text13 dropdown_text">
+                    <span>거래내역</span>
+                  </span>
+                </div>
+              </a>
+              <a href="af-trading2.html">
+                <div class="top-container06">
+                  <span class="top-text14 dropdown_text">
+                    <span>손익정보</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="top-top1">
+            <div class="top-frame26">
+              <div class="top-container07">
+                <span id="topuserid1" class="top-text15">-</span>
+                <span class="top-text16">&nbsp;님 방문을 환영합니다.</span>
+              </div>
+              <div class="top-container08">
+                <a href="ab-maind-cs.html" class="top-navlink02">
+                  <div class="top-group7 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon">
+                      <path
+                        d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM746.6 760.8c-177.6 0-239.2-80-272-179.6l-32.8-102.6c-24.6-75-53.4-133.4-143.6-133.4-62.6 0-126.2 45.2-126.2 171.4 0 98.6 50.2 160.2 121.2 160.2 80 0 133.4-59.6 133.4-59.6l32.8 89.2c0 0-55.4 54.4-171.4 54.4-144 0-224-84-224-240 0-162.2 80-257.6 231-257.6 136.6 0 205.2 49.2 248.4 182.6l33.8 102.6c24.6 75 67.8 129.4 171.4 129.4 69.8 0 106.8-15.4 106.8-53.4 0-29.8-17.4-51.4-69.8-63.6l-69.8-16.4c-85.2-20.6-119-64.6-119-134.4 0-111.8 90.4-146.8 182.6-146.8 104.6 0 168.4 38 176.6 130.4l-102.6 12.4c-4.2-44.2-30.8-62.6-80-62.6-45.2 0-72.8 20.6-72.8 55.4 0 30.8 13.4 49.2 58.4 59.6l65.6 14.4c88.2 20.6 135.4 63.6 135.4 146.8 0 102.2-86.2 141.2-213.4 141.2z"
+                      ></path>
+                    </svg>
+                    <span class="top-text17"><span>고객센터</span></span>
+                  </div>
+                </a>
+                <a href="ab-mainb-user-info.html" class="top-navlink03">
+                  <div class="top-group71 hoverbtnblue">
+                    <svg
+                      viewBox="0 0 1170.2857142857142 1024"
+                      class="top-icon2"
+                    >
+                      <path
+                        d="M512 692.571c0 41.714-27.429 75.429-61.143 75.429h-243.429c-33.714 0-61.143-33.714-61.143-75.429 0-75.429 18.286-162.286 93.714-162.286 22.857 22.857 54.286 36.571 89.143 36.571s66.286-13.714 89.143-36.571c75.429 0 93.714 86.857 93.714 162.286zM438.857 438.857c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM1024 676.571v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM804.571 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-182.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h182.857c10.286 0 18.286 8 18.286 18.286zM1024 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-109.714c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h109.714c10.286 0 18.286 8 18.286 18.286zM1024 384v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM1097.143 859.429v-640h-1024v640c0 9.714 8.571 18.286 18.286 18.286h987.429c9.714 0 18.286-8.571 18.286-18.286zM1170.286 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-987.429c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h987.429c50.286 0 91.429 41.143 91.429 91.429z"
+                      ></path>
+                    </svg>
+                    <span class="top-text18"><span>회원정보</span></span>
+                  </div>
+                </a>
+                <a href="index.html" class="top-navlink04">
+                  <div class="top-group72 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon4">
+                      <path
+                        d="M384 512h-320v-128h320v-128l192 192-192 192zM1024 0v832l-384 192v-192h-384v-256h64v192h320v-576l256-128h-576v256h-64v-320z"
+                      ></path>
+                    </svg>
+                    <span class="top-text19"><span>로그인</span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="top-container09"></div>
+            <div class="top-frame13">
+              <div class="top-container10 dropmain">
+                <a
+                  href="ac-interested-stock01.html"
+                  class="top-text20 dropdown_text"
+                >
+                  <span>관심종목</span>
+                </a>
+                <div class="top-container11 dropdown1_Window">
+                  <div class="top-container12">
+                    <a href="ac-interested-stock01.html">
+                      <div class="top-container13">
+                        <span class="top-text22 dropdown_text">
+                          <span>관심종목 신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock02.html">
+                      <div class="top-container14">
+                        <span class="top-text23 dropdown_text">
+                          <span>관심종목 편집</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock03.html">
+                      <div class="top-container15">
+                        <span class="top-text24 dropdown_text">
+                          <span>승인요청 목록</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ad-order.html" class="top-text25 dropdown_text">
+                <span>종합주문</span>
+              </a>
+              <a href="ae-over-night.html" class="top-text27 dropdown_text">
+                <span>오버나잇</span>
+              </a>
+              <div class="top-container16 dropmain">
+                <a href="af-trading1.html" class="top-text29 dropdown_text">
+                  <span>거래내역</span>
+                </a>
+              </div>
+              <div class="top-container17 dropmain">
+                <a href="ag-bank1.html" class="top-text31 dropdown_text">
+                  계좌종합
+                </a>
+                <div class="top-container18 dropdown1_Window">
+                  <div class="top-container19">
+                    <a href="ag-bank1.html">
+                      <div class="top-container20">
+                        <span class="top-text32 dropdown_text">
+                          <span>계좌종합</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank2.html">
+                      <div class="top-container21">
+                        <span class="top-text33 dropdown_text">
+                          <span>입금확인 요청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank3.html">
+                      <div class="top-container22">
+                        <span class="top-text34 dropdown_text">
+                          <span>출금신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank4.html">
+                      <div class="top-container23">
+                        <span class="top-text35 dropdown_text">
+                          <span>입출금확인</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ab-main.html" class="top-text36 hoverbtnSubmenubluetext">
+                RICHSTOCK
+              </a>
+            </div>
+          </div>
+        </footer>
+        <div class="bottom-bottom">
+          <div class="bottom-container">
+            <span class="bottom-text">
+              <span>Copyright(c) 2023 RICHSTOCK All Right Reserved.</span>
+            </span>
+            <div class="bottom-frame-bg">
+              <a
+                href="ab-mainc-intro.html"
+                class="bottom-text02 hoverbtnblacktext"
+              >
+                <span>리치스탁 소개</span>
+              </a>
+              <a
+                href="ab-maine-rule.html"
+                class="bottom-text03 hoverbtnblacktext"
+              >
+                <span>거래 규정</span>
+              </a>
+              <a
+                href="ab-maind-cs.html"
+                class="bottom-text04 hoverbtnblacktext"
+              >
+                <span>고객센터</span>
+              </a>
+              <a
+                href="ab-mainf-tos.html"
+                class="bottom-text05 hoverbtnblacktext"
+              >
+                <span>이용약관</span>
+              </a>
+            </div>
+            <img
+              alt="Icontele21273"
+              src="public/external/icontele21273-gqug-200h.png"
+              class="bottom-icontele2"
+            />
+            <div class="bottom-frame18">
+              <span class="bottom-text06">Telegram. @rich110099</span>
+              <span class="bottom-text07">고객지원센터</span>
+              <a href="ab-maind-cs.html" class="bottom-navlink">
+                <img
+                  alt="HeadsetundefinedGlyphundefined1273"
+                  src="public/external/headsetundefinedglyphundefined1273-h5.svg"
+                  class="bottom-headsetundefined-glyphundefined"
+                />
+              </a>
+            </div>
+            <a href="ab-main.html" class="bottom-text08 hoverbtnblacktext">
+              <span>RICHSTOCK</span>
+            </a>
+          </div>
+        </div>
+        <div class="ad-order-for-common-info">
+          <span id="topAccCode" class="ad-order-text349">Text</span>
+          <span id="topuserid2" class="ad-order-text350">Text</span>
+          <span id="topdep" class="ad-order-text351">Text</span>
+          <span id="topav" class="ad-order-text352">Text</span>
+          <input
+            type="text"
+            id="stocktemp"
+            name="stock"
+            value="A005930"
+            class="ad-order-textinput input"
+          />
+        </div>
+        <div
+          class="java-code-p-main-code-embed java-code-p-main-root-class-name9"
+        >
+          <div>
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/stockcommonpc.js'> </script>
+
+<link rel='stylesheet' href='css/stockcommon.css'>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div
+          class="java-code-popup-modal-code-embed java-code-popup-modal-root-class-name15"
+        >
+          <div>
+            <dangerous-html
+              html="    <script type='text/javascript' src='/js/stockmodal1.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal2.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal3.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <img
+          id="btn-modal3"
+          alt="Icontele21273"
+          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a13bafc3-205d-4106-adc1-b311a55ef3ee/b2f3fb10-4ebf-4380-bf41-f9c74291aec2?org_if_sml=1728"
+          class="ad-order-icontele2"
+        />
+      </div>
+    </div>
+  </body>
+</html>

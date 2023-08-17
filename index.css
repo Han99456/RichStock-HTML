@@ -1,0 +1,503 @@
+.aa-login-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aa-login-java-code-personal {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  z-index: -100;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-frame000-member {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: auto;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.aa-login-bg {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.aa-login-frame9 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 1147px;
+  bottom: 0px;
+  height: 707px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.5) ;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-radius: 10px;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 1);
+}
+.aa-login-container01 {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 90%;
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-text {
+  top: 23px;
+  left: 35px;
+  color: rgba(179, 179, 179, 1);
+  width: 108px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-group27 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 369px;
+  bottom: 0px;
+  height: 96px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  align-items: center;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.aa-login-text02 {
+  color: rgba(0, 0, 0, 1);
+  width: 325px;
+  height: auto;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-text04 {
+  top: 65px;
+  color: rgba(151, 151, 151, 1);
+  width: 369px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inder;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-container02 {
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 90%;
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.aa-login-container03 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-text06 {
+  top: 23px;
+  left: 35px;
+  color: rgba(179, 179, 179, 1);
+  width: 108px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-container04 {
+  width: 100%;
+  height: 184px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.aa-login-id-input {
+  width: 428px;
+  height: 51px;
+  align-self: center;
+  text-align: center;
+  border-width: 0px;
+  background-color: rgba(244, 244, 244, 1);
+}
+.aa-login-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-pw-input {
+  width: 428px;
+  height: 51px;
+  align-self: center;
+  text-align: center;
+  border-width: 0px;
+  background-color: rgba(244, 244, 244, 1);
+}
+.aa-login-container06 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-button {
+  color: var(--dl-color-gray-white);
+  width: 75%;
+  height: 60px;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+}
+.aa-login-container07 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aa-login-btn-member {
+  top: 108px;
+  left: 334px;
+  color: rgb(28, 154, 255);
+  width: 168px;
+  height: 29px;
+  position: absolute;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  border-color: var(--dl-color-primary-300);
+  border-width: 1px;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.aa-login-btn-cs {
+  top: 146px;
+  left: 334px;
+  color: rgb(151, 151, 151);
+  width: 168px;
+  height: 29px;
+  position: absolute;
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  border-color: rgb(151, 151, 151);
+  border-width: 1px;
+  text-decoration: none;
+  background-color: var(--dl-color-gray-white);
+}
+.aa-login-text11 {
+  top: 114px;
+  left: 142px;
+  color: rgb(28, 154, 255);
+  position: absolute;
+  text-align: right;
+}
+.aa-login-text14 {
+  top: 152px;
+  left: 112px;
+  position: absolute;
+  text-align: right;
+}
+.aa-login-find-pw {
+  top: 420px;
+  color: rgba(58, 58, 58, 1);
+  right: 47px;
+  width: 153px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: right;
+  font-family: Inter;
+  font-weight: bold;
+  line-height: 167.99999475479126%;
+  border-width: 0px;
+  font-stretch: normal;
+  text-decoration: none;
+  background-color: transparent;
+}
+.aa-login-container08 {
+  top: 420px;
+  left: 72px;
+  width: 168px;
+  height: 23.375px;
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.aa-login-text18 {
+  top: 0px;
+  left: 28px;
+  color: rgba(0, 0, 0, 1);
+  width: 140px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inder;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-checkbox {
+  top: 0px;
+  left: 0px;
+  width: 22px;
+  height: 22px;
+  opacity: 0.8;
+  position: absolute;
+  accent-color: #2a84f3;
+}
+.aa-login-text20 {
+  left: 0px;
+  color: rgba(160, 160, 160, 1);
+  right: 0px;
+  width: 520px;
+  bottom: 12px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-modal1 {
+  top: 50%;
+  left: 50%;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  display: none;
+  z-index: 100;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+.aa-login-frame000-member-tos {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 640px;
+  bottom: 0px;
+  height: 450px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.5) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+}
+.aa-login-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-rectangle2 {
+  width: 100%;
+  height: 45px;
+  border-radius: var(--dl-radius-radius-radius2);
+  border-top-left-radius: var(--dl-radius-radius-radius8);
+  border-top-right-radius: var(--dl-radius-radius-radius8);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.aa-login-info {
+  top: 6px;
+  left: 13px;
+  width: 36px;
+  height: 34px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.aa-login-union {
+  top: 5.3125px;
+  left: 5.625px;
+  width: 25px;
+  height: 23px;
+  position: absolute;
+}
+.aa-login-text22 {
+  top: 8px;
+  left: 54px;
+  color: rgb(0, 0, 0);
+  width: 155px;
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-container10 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 15px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aa-login-container11 {
+  width: 100%;
+  height: 308px;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.aa-login-text23 {
+  color: rgb(0, 0, 0);
+  width: 640px;
+  height: auto;
+  font-size: 18px;
+  align-self: center;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 168%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-login-container12 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aa-login-container13 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 39px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aa-login-text24 {
+  color: var(--dl-color-gray-white);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.aa-login-java-code-personal1 {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  z-index: -100;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aa-login-icontele2 {
+  top: 86px;
+  right: 55px;
+  width: 43px;
+  height: 43px;
+  display: none;
+  position: absolute;
+}
+.aa-login-code-embed {
+  flex: none;
+  display: none;
+  z-index: -100;
+  position: fixed;
+}

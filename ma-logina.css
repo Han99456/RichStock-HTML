@@ -1,0 +1,579 @@
+.java-code-mobile-main-code-embed {
+  flex: none;
+  display: none;
+  z-index: -100;
+  position: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ma-logina-container {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.ma-logina-bg {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.ma-logina-bg1 {
+  width: 100%;
+  height: 100%;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+}
+.ma-logina-m000-login {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.ma-logina-container1 {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.ma-logina-frame147 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 90%;
+  bottom: 0px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: center;
+  background-color: #ffffff;
+}
+.ma-logina-text {
+  top: 45px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 155px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-container2 {
+  top: 85px;
+  left: 0px;
+  right: 0px;
+  width: 90%;
+  height: 333px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.ma-logina-text02 {
+  top: 48px;
+  left: 0px;
+  color: rgb(0, 0, 0);
+  right: 0px;
+  width: 267px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inder;
+  font-weight: 400;
+  line-height: 168%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-id-input {
+  top: 142px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  border-width: 0px;
+  background-color: rgba(244, 244, 244, 1);
+}
+.ma-logina-pw-input {
+  top: 185px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  border-width: 0px;
+  background-color: rgba(244, 244, 244, 1);
+}
+.ma-logina-button {
+  top: 230px;
+  left: 0px;
+  color: var(--dl-color-gray-white);
+  right: 0px;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: 2.6;
+  border-width: 0px;
+  background-color: rgb(28, 154, 255);
+}
+.ma-logina-text05 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+}
+.ma-logina-container3 {
+  top: 290px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 20.03125px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.ma-logina-text08 {
+  top: 0px;
+  left: 20px;
+  color: rgba(0, 0, 0, 1);
+  width: 140px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inder;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-checkbox {
+  top: 0.03125px;
+  left: 0px;
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin: auto;
+  opacity: 0.8;
+  position: absolute;
+  accent-color: #2a84f3;
+}
+.ma-logina-text10 {
+  top: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 153px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Semi Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-text11 {
+  left: 34px;
+  color: rgba(160, 160, 160, 1);
+  width: 267px;
+  bottom: var(--dl-space-space-halfunit);
+  height: auto;
+  position: absolute;
+  font-size: 8px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-container4 {
+  left: 0px;
+  right: 0px;
+  width: 90%;
+  bottom: 44px;
+  height: 62px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+}
+.ma-logina-text12 {
+  top: 7px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  width: 153px;
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-text13 {
+  top: 39px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  width: 153px;
+  height: auto;
+  position: absolute;
+  font-size: 10px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-navlink {
+  display: contents;
+}
+.ma-logina-frame-bg {
+  top: 32px;
+  right: 0px;
+  width: 111px;
+  height: 29px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+.ma-logina-text14 {
+  top: 5px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Junge;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-navlink1 {
+  display: contents;
+}
+.ma-logina-frame-bg1 {
+  top: 0px;
+  right: 0px;
+  width: 111px;
+  height: 29px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(28, 154, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+.ma-logina-text15 {
+  top: 5px;
+  left: 0px;
+  color: rgba(28, 154, 255, 1);
+  right: 0px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Junge;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-modal1 {
+  top: 50%;
+  left: 50%;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+.ma-logina-check-id-pw {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 85%;
+  bottom: 0px;
+  height: 350px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-end;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ma-logina-frame5 {
+  left: 0px;
+  right: 0px;
+  width: 50%;
+  bottom: 15px;
+  height: 33px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-color: rgba(28, 154, 255, 1);
+}
+.ma-logina-text17 {
+  top: 0px;
+  left: 0px;
+  color: rgba(255, 255, 255, 1);
+  right: 0px;
+  bottom: 0px;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 20px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-rectangle2 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 43px;
+  margin: auto;
+  position: absolute;
+}
+.ma-logina-text19 {
+  top: 12px;
+  left: 40px;
+  color: rgba(0, 0, 0, 1);
+  width: 50%;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-text21 {
+  top: 0px;
+  left: 0px;
+  color: rgb(0, 0, 0);
+  right: 0px;
+  width: 267px;
+  bottom: 0px;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inder;
+  font-weight: 400;
+  line-height: 168%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ma-logina-info {
+  top: 10px;
+  left: 12px;
+  width: 24px;
+  height: 22.754716873168945px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.ma-logina-union {
+  top: 3px;
+  left: 3.75px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+.ma-logina-java-code-personal {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  z-index: -100;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ma-logina-code-modal {
+  flex: none;
+  display: none;
+  z-index: -100;
+  position: fixed;
+}
+.ma-logina-modalfortemp {
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.ma-logina-icontele2 {
+  top: 0px;
+  left: 0px;
+  width: 43px;
+  height: 43px;
+  display: none;
+  position: absolute;
+}
+.ma-logina-for-common-info {
+  display: flex;
+}
+.ma-logina-text25 {
+  display: none;
+}
+.ma-logina-text26 {
+  display: none;
+}
+.ma-logina-text27 {
+  display: none;
+}
+.ma-logina-text28 {
+  display: none;
+}
+.ma-logina-text29 {
+  display: none;
+}
+.ma-logina-text30 {
+  display: none;
+}
+.ma-logina-text31 {
+  display: none;
+}
+@media(max-width: 400px) {
+  .ma-logina-text14 {
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    bottom: 0px;
+    margin: auto;
+  }
+  .ma-logina-text15 {
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    bottom: 0px;
+    margin: auto;
+  }
+}

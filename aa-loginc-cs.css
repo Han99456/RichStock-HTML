@@ -1,0 +1,179 @@
+.aa-loginc-cs-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.aa-loginc-cs-frame000-login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+.aa-loginc-cs-bg {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.aa-loginc-cs-frame000-member-tos {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 1147px;
+  bottom: 0px;
+  height: 707px;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.5) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.aa-loginc-cs-text {
+  left: 0px;
+  color: rgba(160, 160, 160, 1);
+  right: 0px;
+  width: 520px;
+  bottom: 12px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 167.99999475479126%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-loginc-cs-frame12 {
+  top: 81px;
+  left: 21px;
+  width: 1104px;
+  height: 593px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.aa-loginc-cs-navlink {
+  display: contents;
+}
+.aa-loginc-cs-frame5 {
+  left: 482px;
+  width: 148px;
+  bottom: 74px;
+  height: 39px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 2px;
+  text-decoration: none;
+  background-color: rgba(28, 154, 255, 1);
+}
+.aa-loginc-cs-text02 {
+  top: 10px;
+  left: 56px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 20px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-loginc-cs-text04 {
+  top: 196px;
+  left: 236px;
+  color: rgb(0, 0, 0);
+  width: 640px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 168%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-loginc-cs-text05 {
+  font-weight: 700;
+}
+.aa-loginc-cs-text14 {
+  top: 60px;
+  left: 208px;
+  color: rgb(0, 0, 0);
+  width: 732px;
+  height: auto;
+  position: absolute;
+  font-size: 26px;
+  font-style: Bold;
+  text-align: center;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 140.5%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-loginc-cs-text15 {
+  top: 23px;
+  color: rgba(179, 179, 179, 1);
+  right: 31px;
+  width: 231px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-loginc-cs-text17 {
+  top: 23px;
+  left: 31px;
+  color: rgba(179, 179, 179, 1);
+  width: 108px;
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.aa-loginc-cs-java-code-personal {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  z-index: -100;
+  align-items: flex-start;
+  flex-direction: column;
+}

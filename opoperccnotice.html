@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock - Management Tool</title>
+    <meta property="og:title" content="↗ Rich Stock - Management Tool" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./opoperccnotice.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="opoperccnotice-container">
+        <div class="op-top-top">
+          <div class="op-top-container">
+            <div class="op-top-container01">
+              <div id="ceronmodule" class="op-top-container02">
+                <span id="creontext" class="op-top-text">
+                  <span>서버 동작감지</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="op-top-container03"></div>
+          <div class="op-top-line"></div>
+          <div class="op-top-container04">
+            <a href="opopercd-user-list.html" class="op-top-navlink">
+              <div class="op-top-container05 hoverbtnblue">
+                <span class="op-top-text1"><span>전체 유저</span></span>
+              </div>
+            </a>
+            <a href="opoperceuser-detailinfo.html" class="op-top-navlink1">
+              <div class="op-top-container06 hoverbtnblue">
+                <span class="op-top-text2"><span>유저 정보</span></span>
+              </div>
+            </a>
+            <a href="opoperceuser-detailinfo.html" class="op-top-navlink2">
+              <div class="op-top-container07 hoverbtnblue">
+                <span class="op-top-text3"><span>상세 거래정보</span></span>
+              </div>
+            </a>
+            <a href="opoperccnotice.html" class="op-top-navlink3">
+              <div class="op-top-container08 hoverbtnblue">
+                <span class="op-top-text4"><span>공지사항</span></span>
+              </div>
+            </a>
+            <a href="opopercballfee.html" class="op-top-navlink4">
+              <div class="op-top-container09 hoverbtnblue">
+                <span class="op-top-text5"><span>종목보유 유저</span></span>
+              </div>
+            </a>
+            <a href="opopercftodayuser.html" class="op-top-navlink5">
+              <div class="op-top-container10 hoverbtnblue">
+                <span class="op-top-text6"><span>거래현황</span></span>
+              </div>
+            </a>
+            <a href="opopercbyearmonth.html" class="op-top-navlink6">
+              <div class="op-top-container11 hoverbtnblue">
+                <span class="op-top-text7"><span>일일 결산</span></span>
+              </div>
+            </a>
+          </div>
+          <div class="op-top-container12"></div>
+        </div>
+        <div class="opoperccnotice-text">
+          <span class="opoperccnotice-text01">공지</span>
+        </div>
+        <div class="opoperccnotice-notice table-noticelistadmin"></div>
+        <div class="opoperccnotice-notice-1">
+          <div class="opoperccnotice-container01">
+            <span class="opoperccnotice-text02">공지 ID</span>
+            <input
+              type="number"
+              id="0_no1"
+              value="0"
+              disabled=""
+              class="opoperccnotice-id-input input"
+            />
+          </div>
+          <div class="opoperccnotice-container02">
+            <span class="opoperccnotice-text03">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="0_no2"
+              value="1"
+              class="opoperccnotice-id-input01 input"
+            />
+          </div>
+          <div class="opoperccnotice-container03">
+            <span class="opoperccnotice-text04">정렬 번호</span>
+            <input
+              type="number"
+              id="0_no3"
+              value="0"
+              class="opoperccnotice-id-input02 input"
+            />
+          </div>
+          <div class="opoperccnotice-container04">
+            <span class="opoperccnotice-text05">작성 시간</span>
+            <input
+              type="text"
+              id="0_no4"
+              value="12:00"
+              class="opoperccnotice-id-input03 input"
+            />
+          </div>
+          <div class="opoperccnotice-container05">
+            <span class="opoperccnotice-text06">제목</span>
+            <input
+              type="text"
+              id="0_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input04 input"
+            />
+          </div>
+          <div class="opoperccnotice-container06">
+            <span class="opoperccnotice-text07">내용</span>
+            <textarea
+              id="0_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container07">
+            <span class="opoperccnotice-text08">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="0_no7"
+              value="1"
+              class="opoperccnotice-id-input05 input"
+            />
+          </div>
+          <button
+            id="Btn_0"
+            type="reset"
+            class="opoperccnotice-button button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text09">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-11">
+          <div class="opoperccnotice-container08">
+            <span class="opoperccnotice-text10">공지 ID</span>
+            <input
+              type="number"
+              id="1_no1"
+              value="1"
+              disabled=""
+              class="opoperccnotice-id-input06 input"
+            />
+          </div>
+          <div class="opoperccnotice-container09">
+            <span class="opoperccnotice-text11">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="1_no2"
+              value="2"
+              class="opoperccnotice-id-input07 input"
+            />
+          </div>
+          <div class="opoperccnotice-container10">
+            <span class="opoperccnotice-text12">정렬 번호</span>
+            <input
+              type="number"
+              id="1_no3"
+              value="1"
+              class="opoperccnotice-id-input08 input"
+            />
+          </div>
+          <div class="opoperccnotice-container11">
+            <span class="opoperccnotice-text13">작성 시간</span>
+            <input
+              type="text"
+              id="1_no4"
+              value="12:00"
+              class="opoperccnotice-id-input09 input"
+            />
+          </div>
+          <div class="opoperccnotice-container12">
+            <span class="opoperccnotice-text14">제목</span>
+            <input
+              type="text"
+              id="1_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input10 input"
+            />
+          </div>
+          <div class="opoperccnotice-container13">
+            <span class="opoperccnotice-text15">내용</span>
+            <textarea
+              id="1_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea01 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container14">
+            <span class="opoperccnotice-text16">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="1_no7"
+              value="1"
+              class="opoperccnotice-id-input11 input"
+            />
+          </div>
+          <button
+            id="Btn_1"
+            type="reset"
+            class="opoperccnotice-button01 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text17">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-2">
+          <div class="opoperccnotice-container15">
+            <span class="opoperccnotice-text18">공지 ID</span>
+            <input
+              type="number"
+              id="2_no1"
+              value="2"
+              disabled=""
+              class="opoperccnotice-id-input12 input"
+            />
+          </div>
+          <div class="opoperccnotice-container16">
+            <span class="opoperccnotice-text19">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="2_no2"
+              value="2"
+              class="opoperccnotice-id-input13 input"
+            />
+          </div>
+          <div class="opoperccnotice-container17">
+            <span class="opoperccnotice-text20">정렬 번호</span>
+            <input
+              type="number"
+              id="2_no3"
+              value="2"
+              class="opoperccnotice-id-input14 input"
+            />
+          </div>
+          <div class="opoperccnotice-container18">
+            <span class="opoperccnotice-text21">작성 시간</span>
+            <input
+              type="text"
+              id="2_no4"
+              value="12:00"
+              class="opoperccnotice-id-input15 input"
+            />
+          </div>
+          <div class="opoperccnotice-container19">
+            <span class="opoperccnotice-text22">제목</span>
+            <input
+              type="text"
+              id="2_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input16 input"
+            />
+          </div>
+          <div class="opoperccnotice-container20">
+            <span class="opoperccnotice-text23">내용</span>
+            <textarea
+              id="2_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea02 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container21">
+            <span class="opoperccnotice-text24">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="2_no7"
+              value="1"
+              class="opoperccnotice-id-input17 input"
+            />
+          </div>
+          <button
+            id="Btn_2"
+            type="reset"
+            class="opoperccnotice-button02 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text25">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-3">
+          <div class="opoperccnotice-container22">
+            <span class="opoperccnotice-text26">공지 ID</span>
+            <input
+              type="number"
+              id="3_no1"
+              value="3"
+              disabled=""
+              class="opoperccnotice-id-input18 input"
+            />
+          </div>
+          <div class="opoperccnotice-container23">
+            <span class="opoperccnotice-text27">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="3_no2"
+              value="2"
+              class="opoperccnotice-id-input19 input"
+            />
+          </div>
+          <div class="opoperccnotice-container24">
+            <span class="opoperccnotice-text28">정렬 번호</span>
+            <input
+              type="number"
+              id="3_no3"
+              value="3"
+              class="opoperccnotice-id-input20 input"
+            />
+          </div>
+          <div class="opoperccnotice-container25">
+            <span class="opoperccnotice-text29">작성 시간</span>
+            <input
+              type="text"
+              id="3_no4"
+              value="12:00"
+              class="opoperccnotice-id-input21 input"
+            />
+          </div>
+          <div class="opoperccnotice-container26">
+            <span class="opoperccnotice-text30">제목</span>
+            <input
+              type="text"
+              id="3_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input22 input"
+            />
+          </div>
+          <div class="opoperccnotice-container27">
+            <span class="opoperccnotice-text31">내용</span>
+            <textarea
+              id="3_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea03 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container28">
+            <span class="opoperccnotice-text32">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="3_no7"
+              value="1"
+              class="opoperccnotice-id-input23 input"
+            />
+          </div>
+          <button
+            id="Btn_3"
+            type="reset"
+            class="opoperccnotice-button03 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text33">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-4">
+          <div class="opoperccnotice-container29">
+            <span class="opoperccnotice-text34">공지 ID</span>
+            <input
+              type="number"
+              id="4_no1"
+              value="4"
+              disabled=""
+              class="opoperccnotice-id-input24 input"
+            />
+          </div>
+          <div class="opoperccnotice-container30">
+            <span class="opoperccnotice-text35">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="4_no2"
+              value="2"
+              class="opoperccnotice-id-input25 input"
+            />
+          </div>
+          <div class="opoperccnotice-container31">
+            <span class="opoperccnotice-text36">정렬 번호</span>
+            <input
+              type="number"
+              id="4_no3"
+              value="4"
+              class="opoperccnotice-id-input26 input"
+            />
+          </div>
+          <div class="opoperccnotice-container32">
+            <span class="opoperccnotice-text37">작성 시간</span>
+            <input
+              type="text"
+              id="4_no4"
+              value="12:00"
+              class="opoperccnotice-id-input27 input"
+            />
+          </div>
+          <div class="opoperccnotice-container33">
+            <span class="opoperccnotice-text38">제목</span>
+            <input
+              type="text"
+              id="4_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input28 input"
+            />
+          </div>
+          <div class="opoperccnotice-container34">
+            <span class="opoperccnotice-text39">내용</span>
+            <textarea
+              id="4_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea04 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container35">
+            <span class="opoperccnotice-text40">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="4_no7"
+              value="1"
+              class="opoperccnotice-id-input29 input"
+            />
+          </div>
+          <button
+            id="Btn_4"
+            type="reset"
+            class="opoperccnotice-button04 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text41">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-5">
+          <div class="opoperccnotice-container36">
+            <span class="opoperccnotice-text42">공지 ID</span>
+            <input
+              type="number"
+              id="5_no1"
+              value="5"
+              disabled=""
+              class="opoperccnotice-id-input30 input"
+            />
+          </div>
+          <div class="opoperccnotice-container37">
+            <span class="opoperccnotice-text43">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="5_no2"
+              value="2"
+              class="opoperccnotice-id-input31 input"
+            />
+          </div>
+          <div class="opoperccnotice-container38">
+            <span class="opoperccnotice-text44">정렬 번호</span>
+            <input
+              type="number"
+              id="5_no3"
+              value="5"
+              class="opoperccnotice-id-input32 input"
+            />
+          </div>
+          <div class="opoperccnotice-container39">
+            <span class="opoperccnotice-text45">작성 시간</span>
+            <input
+              type="text"
+              id="5_no4"
+              value="12:00"
+              class="opoperccnotice-id-input33 input"
+            />
+          </div>
+          <div class="opoperccnotice-container40">
+            <span class="opoperccnotice-text46">제목</span>
+            <input
+              type="text"
+              id="5_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input34 input"
+            />
+          </div>
+          <div class="opoperccnotice-container41">
+            <span class="opoperccnotice-text47">내용</span>
+            <textarea
+              id="5_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea05 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container42">
+            <span class="opoperccnotice-text48">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="5_no7"
+              value="1"
+              class="opoperccnotice-id-input35 input"
+            />
+          </div>
+          <button
+            id="Btn_5"
+            type="reset"
+            class="opoperccnotice-button05 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text49">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-6">
+          <div class="opoperccnotice-container43">
+            <span class="opoperccnotice-text50">공지 ID</span>
+            <input
+              type="number"
+              id="6_no1"
+              value="6"
+              disabled=""
+              class="opoperccnotice-id-input36 input"
+            />
+          </div>
+          <div class="opoperccnotice-container44">
+            <span class="opoperccnotice-text51">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="6_no2"
+              value="2"
+              class="opoperccnotice-id-input37 input"
+            />
+          </div>
+          <div class="opoperccnotice-container45">
+            <span class="opoperccnotice-text52">정렬 번호</span>
+            <input
+              type="number"
+              id="6_no3"
+              value="6"
+              class="opoperccnotice-id-input38 input"
+            />
+          </div>
+          <div class="opoperccnotice-container46">
+            <span class="opoperccnotice-text53">작성 시간</span>
+            <input
+              type="text"
+              id="6_no4"
+              value="12:00"
+              class="opoperccnotice-id-input39 input"
+            />
+          </div>
+          <div class="opoperccnotice-container47">
+            <span class="opoperccnotice-text54">제목</span>
+            <input
+              type="text"
+              id="6_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input40 input"
+            />
+          </div>
+          <div class="opoperccnotice-container48">
+            <span class="opoperccnotice-text55">내용</span>
+            <textarea
+              id="6_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea06 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container49">
+            <span class="opoperccnotice-text56">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="6_no7"
+              value="1"
+              class="opoperccnotice-id-input41 input"
+            />
+          </div>
+          <button
+            id="Btn_6"
+            type="reset"
+            class="opoperccnotice-button06 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text57">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-7">
+          <div class="opoperccnotice-container50">
+            <span class="opoperccnotice-text58">공지 ID</span>
+            <input
+              type="number"
+              id="7_no1"
+              value="7"
+              disabled=""
+              class="opoperccnotice-id-input42 input"
+            />
+          </div>
+          <div class="opoperccnotice-container51">
+            <span class="opoperccnotice-text59">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="7_no2"
+              value="2"
+              class="opoperccnotice-id-input43 input"
+            />
+          </div>
+          <div class="opoperccnotice-container52">
+            <span class="opoperccnotice-text60">정렬 번호</span>
+            <input
+              type="number"
+              id="7_no3"
+              value="7"
+              class="opoperccnotice-id-input44 input"
+            />
+          </div>
+          <div class="opoperccnotice-container53">
+            <span class="opoperccnotice-text61">작성 시간</span>
+            <input
+              type="text"
+              id="7_no4"
+              value="12:00"
+              class="opoperccnotice-id-input45 input"
+            />
+          </div>
+          <div class="opoperccnotice-container54">
+            <span class="opoperccnotice-text62">제목</span>
+            <input
+              type="text"
+              id="7_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input46 input"
+            />
+          </div>
+          <div class="opoperccnotice-container55">
+            <span class="opoperccnotice-text63">내용</span>
+            <textarea
+              id="7_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea07 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container56">
+            <span class="opoperccnotice-text64">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="7_no7"
+              value="1"
+              class="opoperccnotice-id-input47 input"
+            />
+          </div>
+          <button
+            id="Btn_7"
+            type="reset"
+            class="opoperccnotice-button07 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text65">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-8">
+          <div class="opoperccnotice-container57">
+            <span class="opoperccnotice-text66">공지 ID</span>
+            <input
+              type="number"
+              id="8_no1"
+              value="8"
+              disabled=""
+              class="opoperccnotice-id-input48 input"
+            />
+          </div>
+          <div class="opoperccnotice-container58">
+            <span class="opoperccnotice-text67">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="8_no2"
+              value="2"
+              class="opoperccnotice-id-input49 input"
+            />
+          </div>
+          <div class="opoperccnotice-container59">
+            <span class="opoperccnotice-text68">정렬 번호</span>
+            <input
+              type="number"
+              id="8_no3"
+              value="8"
+              class="opoperccnotice-id-input50 input"
+            />
+          </div>
+          <div class="opoperccnotice-container60">
+            <span class="opoperccnotice-text69">작성 시간</span>
+            <input
+              type="text"
+              id="8_no4"
+              value="12:00"
+              class="opoperccnotice-id-input51 input"
+            />
+          </div>
+          <div class="opoperccnotice-container61">
+            <span class="opoperccnotice-text70">제목</span>
+            <input
+              type="text"
+              id="8_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input52 input"
+            />
+          </div>
+          <div class="opoperccnotice-container62">
+            <span class="opoperccnotice-text71">내용</span>
+            <textarea
+              id="8_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea08 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container63">
+            <span class="opoperccnotice-text72">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="8_no7"
+              value="1"
+              class="opoperccnotice-id-input53 input"
+            />
+          </div>
+          <button
+            id="Btn_8"
+            type="reset"
+            class="opoperccnotice-button08 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text73">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-9">
+          <div class="opoperccnotice-container64">
+            <span class="opoperccnotice-text74">공지 ID</span>
+            <input
+              type="number"
+              id="9_no1"
+              value="9"
+              disabled=""
+              class="opoperccnotice-id-input54 input"
+            />
+          </div>
+          <div class="opoperccnotice-container65">
+            <span class="opoperccnotice-text75">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="9_no2"
+              value="2"
+              class="opoperccnotice-id-input55 input"
+            />
+          </div>
+          <div class="opoperccnotice-container66">
+            <span class="opoperccnotice-text76">정렬 번호</span>
+            <input
+              type="number"
+              id="9_no3"
+              value="9"
+              class="opoperccnotice-id-input56 input"
+            />
+          </div>
+          <div class="opoperccnotice-container67">
+            <span class="opoperccnotice-text77">작성 시간</span>
+            <input
+              type="text"
+              id="9_no4"
+              value="12:00"
+              class="opoperccnotice-id-input57 input"
+            />
+          </div>
+          <div class="opoperccnotice-container68">
+            <span class="opoperccnotice-text78">제목</span>
+            <input
+              type="text"
+              id="9_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input58 input"
+            />
+          </div>
+          <div class="opoperccnotice-container69">
+            <span class="opoperccnotice-text79">내용</span>
+            <textarea
+              id="9_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea09 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container70">
+            <span class="opoperccnotice-text80">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="9_no7"
+              value="1"
+              class="opoperccnotice-id-input59 input"
+            />
+          </div>
+          <button
+            id="Btn_9"
+            type="reset"
+            class="opoperccnotice-button09 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text81">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-notice-10">
+          <div class="opoperccnotice-container71">
+            <span class="opoperccnotice-text82">공지 ID</span>
+            <input
+              type="number"
+              id="10_no1"
+              value="10"
+              disabled=""
+              class="opoperccnotice-id-input60 input"
+            />
+          </div>
+          <div class="opoperccnotice-container72">
+            <span class="opoperccnotice-text83">[타잎] 1. 중요 / 2 일반</span>
+            <input
+              type="number"
+              id="10_no2"
+              value="2"
+              class="opoperccnotice-id-input61 input"
+            />
+          </div>
+          <div class="opoperccnotice-container73">
+            <span class="opoperccnotice-text84">정렬 번호</span>
+            <input
+              type="number"
+              id="10_no3"
+              value="10"
+              class="opoperccnotice-id-input62 input"
+            />
+          </div>
+          <div class="opoperccnotice-container74">
+            <span class="opoperccnotice-text85">작성 시간</span>
+            <input
+              type="text"
+              id="10_no4"
+              value="12:00"
+              class="opoperccnotice-id-input63 input"
+            />
+          </div>
+          <div class="opoperccnotice-container75">
+            <span class="opoperccnotice-text86">제목</span>
+            <input
+              type="text"
+              id="10_no5"
+              cols="5"
+              value="[공지] 어뷰징 및 해킹 관련 조치"
+              class="opoperccnotice-id-input64 input"
+            />
+          </div>
+          <div class="opoperccnotice-container76">
+            <span class="opoperccnotice-text87">내용</span>
+            <textarea
+              id="10_no6"
+              type="1_no6"
+              placeholder="장비를 정지합니다."
+              class="opoperccnotice-textarea10 textarea"
+            ></textarea>
+          </div>
+          <div class="opoperccnotice-container77">
+            <span class="opoperccnotice-text88">중요공지 표시여부</span>
+            <input
+              type="text"
+              id="10_no7"
+              value="1"
+              class="opoperccnotice-id-input65 input"
+            />
+          </div>
+          <button
+            id="Btn_10"
+            type="reset"
+            class="opoperccnotice-button10 button hoverbtnblue"
+          >
+            <span class="opoperccnotice-text89">편집</span>
+          </button>
+        </div>
+        <div class="opoperccnotice-personal-code">
+          <div>
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/stockcommonoper.js'> </script>
+<script type='text/javascript' src='/js/oper_c3_notice.js'> </script>
+
+
+<link rel='stylesheet' href='css/stockcommon.css'>
+<link rel='stylesheet' href='css/oper.css'>"
+            ></dangerous-html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.opoperalogin-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.opoperalogin-container1 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #D9D9D9;
+}
+.opoperalogin-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.opoperalogin-id-input {
+  width: 50%;
+  height: 51px;
+  text-align: center;
+  border-width: 0px;
+  margin-bottom: 5px;
+  background-color: rgba(244, 244, 244, 1);
+}
+.opoperalogin-pw-input {
+  width: 50%;
+  height: 51px;
+  text-align: center;
+  border-width: 0px;
+  margin-bottom: 5px;
+  background-color: rgba(244, 244, 244, 1);
+}
+.opoperalogin-container2 {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-primary-500);
+}
+.opoperalogin-text1 {
+  color: var(--dl-color-gray-white);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.opoperalogin-personal-code {
+  flex: none;
+  display: none;
+  z-index: -100;
+  position: fixed;
+}

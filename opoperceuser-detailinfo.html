@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock - Management Tool</title>
+    <meta property="og:title" content="↗ Rich Stock - Management Tool" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./opoperceuser-detailinfo.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="opoperceuser-detailinfo-container">
+        <div class="op-top-top">
+          <div class="op-top-container">
+            <div class="op-top-container01">
+              <div id="ceronmodule" class="op-top-container02">
+                <span id="creontext" class="op-top-text">
+                  <span>서버 동작감지</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="op-top-container03"></div>
+          <div class="op-top-line"></div>
+          <div class="op-top-container04">
+            <a href="opopercd-user-list.html" class="op-top-navlink">
+              <div class="op-top-container05 hoverbtnblue">
+                <span class="op-top-text1"><span>전체 유저</span></span>
+              </div>
+            </a>
+            <a href="opoperceuser-detailinfo.html" class="op-top-navlink1">
+              <div class="op-top-container06 hoverbtnblue">
+                <span class="op-top-text2"><span>유저 정보</span></span>
+              </div>
+            </a>
+            <a href="opoperceuser-detailinfo.html" class="op-top-navlink2">
+              <div class="op-top-container07 hoverbtnblue">
+                <span class="op-top-text3"><span>상세 거래정보</span></span>
+              </div>
+            </a>
+            <a href="opoperccnotice.html" class="op-top-navlink3">
+              <div class="op-top-container08 hoverbtnblue">
+                <span class="op-top-text4"><span>공지사항</span></span>
+              </div>
+            </a>
+            <a href="opopercballfee.html" class="op-top-navlink4">
+              <div class="op-top-container09 hoverbtnblue">
+                <span class="op-top-text5"><span>종목보유 유저</span></span>
+              </div>
+            </a>
+            <a href="opopercftodayuser.html" class="op-top-navlink5">
+              <div class="op-top-container10 hoverbtnblue">
+                <span class="op-top-text6"><span>거래현황</span></span>
+              </div>
+            </a>
+            <a href="opopercbyearmonth.html" class="op-top-navlink6">
+              <div class="op-top-container11 hoverbtnblue">
+                <span class="op-top-text7"><span>일일 결산</span></span>
+              </div>
+            </a>
+          </div>
+          <div class="op-top-container12"></div>
+        </div>
+        <div class="opoperceuser-detailinfo-container01">
+          <span class="opoperceuser-detailinfo-text">유저 정보</span>
+        </div>
+        <div class="opoperceuser-detailinfo-container02">
+          <div class="opoperceuser-detailinfo-container03">
+            <input
+              type="text"
+              id="useridforfind"
+              placeholder="유저 아이디"
+              class="opoperceuser-detailinfo-text001 input"
+            />
+            <div
+              id="finduserid"
+              class="opoperceuser-detailinfo-container04 hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text002">
+                <span>아이디 검색</span>
+                <br />
+              </span>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-container05">
+            <input
+              type="text"
+              id="userphoneforfind"
+              placeholder="전화번호"
+              class="opoperceuser-detailinfo-text005 input"
+            />
+            <div
+              id="finduserphone"
+              class="opoperceuser-detailinfo-container06 hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text006">
+                <span>전화번호 검색</span>
+                <br />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="finduser1" class="opoperceuser-detailinfo-basic-info">
+          <div class="opoperceuser-detailinfo-container07">
+            <span class="opoperceuser-detailinfo-text009">아이디</span>
+            <div class="opoperceuser-detailinfo-container08">
+              <span id="basicinfo_ID" class="opoperceuser-detailinfo-text010">
+                None
+              </span>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-container09">
+            <span class="opoperceuser-detailinfo-text011">이름</span>
+            <div class="opoperceuser-detailinfo-container10">
+              <span id="basicinfo2" class="opoperceuser-detailinfo-text012">
+                None
+              </span>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-container11">
+            <span class="opoperceuser-detailinfo-text013">
+              회원가입 일시&nbsp;
+            </span>
+            <div class="opoperceuser-detailinfo-container12">
+              <span id="basicinfo3" class="opoperceuser-detailinfo-text014">
+                None
+              </span>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-container13">
+            <span class="opoperceuser-detailinfo-text015">
+              최종 로그인 시간&nbsp;
+            </span>
+            <div class="opoperceuser-detailinfo-container14">
+              <span id="basicinfo4" class="opoperceuser-detailinfo-text016">
+                <span class="opoperceuser-detailinfo-text017">none</span>
+                <br />
+              </span>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-basic-info1">
+            <div class="opoperceuser-detailinfo-container15">
+              <span class="opoperceuser-detailinfo-text019">텔레그램</span>
+              <input
+                type="text"
+                id="telegram"
+                disabled=""
+                placeholder="유저 정보"
+                class="opoperceuser-detailinfo-text020 input"
+              />
+            </div>
+            <div class="opoperceuser-detailinfo-container16">
+              <span class="opoperceuser-detailinfo-text021">이메일</span>
+              <input
+                type="text"
+                id="email"
+                disabled=""
+                placeholder="유저 정보"
+                class="opoperceuser-detailinfo-text022 input"
+              />
+            </div>
+            <div class="opoperceuser-detailinfo-container17">
+              <span class="opoperceuser-detailinfo-text023">전화번호</span>
+              <input
+                type="number"
+                id="mobile"
+                disabled=""
+                placeholder="유저 정보"
+                class="opoperceuser-detailinfo-text024 input"
+              />
+            </div>
+            <div class="opoperceuser-detailinfo-container18">
+              <span class="opoperceuser-detailinfo-text025">출금은행</span>
+              <input
+                type="text"
+                id="bankName"
+                disabled=""
+                placeholder="유저 정보"
+                class="opoperceuser-detailinfo-text026 input"
+              />
+            </div>
+            <div class="opoperceuser-detailinfo-container19">
+              <span class="opoperceuser-detailinfo-text027">계좌번호</span>
+              <input
+                type="text"
+                id="bankAccount"
+                disabled=""
+                placeholder="유저 정보"
+                class="opoperceuser-detailinfo-text028 input"
+              />
+            </div>
+            <div class="opoperceuser-detailinfo-container20">
+              <span class="opoperceuser-detailinfo-text029">예금주</span>
+              <input
+                type="text"
+                id="bankDepositor"
+                disabled=""
+                placeholder="유저 정보"
+                class="opoperceuser-detailinfo-text030 input"
+              />
+            </div>
+          </div>
+          <div
+            id="userAlldetailBtn"
+            class="opoperceuser-detailinfo-container21"
+          >
+            <button
+              id="userdetailinforequest"
+              type="reset"
+              class="opoperceuser-detailinfo-button button hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text031">
+                <span>상세정보 보기</span>
+                <br />
+              </span>
+            </button>
+          </div>
+          <div id="memberjoinqeruest" class="opoperceuser-detailinfo-user-join">
+            <div class="opoperceuser-detailinfo-container22">
+              <span class="opoperceuser-detailinfo-text034">가입신청</span>
+            </div>
+            <div
+              id="postConfirmSigninBtn"
+              class="opoperceuser-detailinfo-container23 hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text035">
+                <span>수락</span>
+                <br />
+              </span>
+            </div>
+          </div>
+          <div id="kickeduser" class="opoperceuser-detailinfo-container24">
+            <span class="opoperceuser-detailinfo-text038">
+              관리자가 강제 탈퇴한 유저입니다.
+            </span>
+          </div>
+          <div id="losscutstopuser" class="opoperceuser-detailinfo-container25">
+            <span class="opoperceuser-detailinfo-text039">
+              현재 로스컷이 진행되지 않는 상태의 유저입니다.
+            </span>
+          </div>
+          <div id="OrderStopuser" class="opoperceuser-detailinfo-container26">
+            <span class="opoperceuser-detailinfo-text040">
+              현재 매수 거래가 정지된 상태의 유저입니다.
+            </span>
+          </div>
+        </div>
+        <div id="finduser2" class="opoperceuser-detailinfo-container27">
+          <div class="opoperceuser-detailinfo-line"></div>
+          <div class="opoperceuser-detailinfo-user-stock-submit">
+            <div class="opoperceuser-detailinfo-container28">
+              <span class="opoperceuser-detailinfo-text041">
+                관심종목 신청 목록
+              </span>
+            </div>
+            <div
+              id="table-userintereststock"
+              class="opoperceuser-detailinfo-container29 table-userintereststock"
+            >
+              <div class="opoperceuser-detailinfo-container30">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="opoperceuser-detailinfo-radiobutton"
+                />
+                <span class="opoperceuser-detailinfo-text042">종목 코드</span>
+                <span class="opoperceuser-detailinfo-text043">종목 이름</span>
+              </div>
+            </div>
+            <span class="opoperceuser-detailinfo-text044">
+              관심종목을 선택한 후, 수락 또는 거절 버튼을 눌러주세요.
+            </span>
+            <div class="opoperceuser-detailinfo-container31">
+              <button
+                id="UserStockrequestOK"
+                type="reset"
+                class="opoperceuser-detailinfo-button01 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text045">
+                  <span>수락</span>
+                  <br />
+                </span>
+              </button>
+              <button
+                id="UserStockrequestNO"
+                type="reset"
+                class="opoperceuser-detailinfo-button02 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text048">
+                  <span>거절</span>
+                  <br />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-line1"></div>
+          <div class="opoperceuser-detailinfo-request-banking">
+            <div class="opoperceuser-detailinfo-container32">
+              <span class="opoperceuser-detailinfo-text051">
+                캐쉬 입금/ 출금&nbsp; 요청
+              </span>
+            </div>
+            <div
+              id="table-userRequestBanking"
+              class="opoperceuser-detailinfo-container33 table-userRequestBanking"
+            >
+              <div class="opoperceuser-detailinfo-container34">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="opoperceuser-detailinfo-radiobutton1"
+                />
+                <span class="opoperceuser-detailinfo-text052">종목 코드</span>
+                <span class="opoperceuser-detailinfo-text053">종목 이름</span>
+              </div>
+            </div>
+            <button
+              id="userRequestBankingOK"
+              type="reset"
+              class="opoperceuser-detailinfo-button03 button hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text054">
+                <span>수락</span>
+                <br />
+              </span>
+            </button>
+          </div>
+          <div class="opoperceuser-detailinfo-line2"></div>
+          <div class="opoperceuser-detailinfo-container35">
+            <div class="opoperceuser-detailinfo-cach-change">
+              <div class="opoperceuser-detailinfo-container36">
+                <span class="opoperceuser-detailinfo-text057">예탁금</span>
+                <span id="dep" class="opoperceuser-detailinfo-text058">-</span>
+              </div>
+              <div class="opoperceuser-detailinfo-container37">
+                <span id="aaa1" class="opoperceuser-detailinfo-text059">-</span>
+                <input
+                  type="number"
+                  id="cash1PlusAmount"
+                  onkeyup="aaa1()"
+                  placeholder="증감액 입력"
+                  class="opoperceuser-detailinfo-text060 input"
+                />
+                <button
+                  id="cash1PlusBtn"
+                  type="reset"
+                  class="opoperceuser-detailinfo-button04 button hoverbtnblue"
+                >
+                  <span class="opoperceuser-detailinfo-text061">
+                    <span>증가 / 감소</span>
+                    <br />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="opoperceuser-detailinfo-cach-change2">
+              <div class="opoperceuser-detailinfo-container38">
+                <span class="opoperceuser-detailinfo-text064">담보금</span>
+                <span id="mrg" class="opoperceuser-detailinfo-text065">-</span>
+              </div>
+              <div class="opoperceuser-detailinfo-container39">
+                <span id="aaa2" class="opoperceuser-detailinfo-text066">-</span>
+                <input
+                  type="number"
+                  id="cash2PlusAmount"
+                  onkeyup="aaa2()"
+                  placeholder="증감액 입력"
+                  class="opoperceuser-detailinfo-text067 input"
+                />
+                <button
+                  id="cash2PlusBtn"
+                  type="reset"
+                  class="opoperceuser-detailinfo-button05 button hoverbtnblue"
+                >
+                  <span class="opoperceuser-detailinfo-text068">
+                    <span>증가 / 감소</span>
+                    <br />
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="opoperceuser-detailinfo-cach-change1">
+              <div class="opoperceuser-detailinfo-container40">
+                <span class="opoperceuser-detailinfo-text071">
+                  주문가능금액
+                </span>
+                <span id="av" class="opoperceuser-detailinfo-text072">-</span>
+              </div>
+              <div class="opoperceuser-detailinfo-container41">
+                <span id="aaa3" class="opoperceuser-detailinfo-text073">-</span>
+                <input
+                  type="number"
+                  id="cash3PlusAmount"
+                  onkeyup="aaa3()"
+                  placeholder="증감액 입력"
+                  class="opoperceuser-detailinfo-text074 input"
+                />
+                <button
+                  id="cash3PlusBtn"
+                  type="reset"
+                  class="opoperceuser-detailinfo-button06 button hoverbtnblue"
+                >
+                  <span class="opoperceuser-detailinfo-text075">
+                    증가 / 감소
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="opoperceuser-detailinfo-container42">
+              <span class="opoperceuser-detailinfo-text076">
+                텔레그램 봇 메시지 보내기
+              </span>
+              <input
+                type="text"
+                id="telenotice"
+                placeholder="텔레그램 봇 메시지"
+                class="opoperceuser-detailinfo-text077 input"
+              />
+              <button
+                id="telebottextBtn"
+                type="reset"
+                class="opoperceuser-detailinfo-button07 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text078">
+                  <span>전송</span>
+                  <br />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-line3"></div>
+          <div class="opoperceuser-detailinfo-stock">
+            <div class="opoperceuser-detailinfo-container43">
+              <span class="opoperceuser-detailinfo-text081">주식보유현황</span>
+            </div>
+            <div id="chekkk" class="opoperceuser-detailinfo-container44">
+              <span class="opoperceuser-detailinfo-text082">종목코드</span>
+              <span class="opoperceuser-detailinfo-text083">종목명</span>
+              <span class="opoperceuser-detailinfo-text084">보유수량</span>
+              <span class="opoperceuser-detailinfo-text085">구매가</span>
+              <span class="opoperceuser-detailinfo-text086">현재가</span>
+            </div>
+            <div
+              id="table-userstock"
+              class="opoperceuser-detailinfo-container45 table-userstock"
+            >
+              <div class="opoperceuser-detailinfo-container46">
+                <span class="opoperceuser-detailinfo-text087">종목코드</span>
+                <span class="opoperceuser-detailinfo-text088">종목명</span>
+                <span class="opoperceuser-detailinfo-text089">보유수량</span>
+                <span class="opoperceuser-detailinfo-text090">구매가</span>
+                <span class="opoperceuser-detailinfo-text091">현재가</span>
+              </div>
+            </div>
+            <div class="opoperceuser-detailinfo-container47">
+              <span class="opoperceuser-detailinfo-text092">
+                <span>종목 이름 :</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text095">
+                <span>종목 코드 :&nbsp;</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text098">
+                <span>수량 : - 주</span>
+                <br />
+              </span>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-stock1">
+            <div class="opoperceuser-detailinfo-container48">
+              <span class="opoperceuser-detailinfo-text101">주문 현황</span>
+            </div>
+            <div class="opoperceuser-detailinfo-container49">
+              <span class="opoperceuser-detailinfo-text102">
+                <span>종목코드</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text105">
+                <span>종목명</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text108">
+                <span>구분</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text111">
+                <span>수량</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text114">
+                <span>가격</span>
+                <br />
+              </span>
+            </div>
+            <div
+              id="table-userstock2"
+              class="opoperceuser-detailinfo-container50 table-userstock2"
+            >
+              <div class="opoperceuser-detailinfo-container51">
+                <span class="opoperceuser-detailinfo-text117">종목코드</span>
+                <span class="opoperceuser-detailinfo-text118">종목명</span>
+                <span class="opoperceuser-detailinfo-text119">보유수량</span>
+                <span class="opoperceuser-detailinfo-text120">구매가</span>
+                <span class="opoperceuser-detailinfo-text121">현재가</span>
+              </div>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-interest-stock">
+            <div class="opoperceuser-detailinfo-container52">
+              <span class="opoperceuser-detailinfo-text122">
+                <span>관심종목 현황</span>
+                <br />
+              </span>
+            </div>
+            <div class="opoperceuser-detailinfo-container53">
+              <span class="opoperceuser-detailinfo-text125">
+                <span>구분</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text128">
+                <span>종목코드</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text131">
+                <span>종목명</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text134">
+                <span>전일종가</span>
+                <br />
+              </span>
+              <span class="opoperceuser-detailinfo-text137">
+                <span>현재가</span>
+                <br />
+              </span>
+            </div>
+            <div class="opoperceuser-detailinfo-container54 table-myinterest2">
+              <div class="opoperceuser-detailinfo-container55">
+                <span class="opoperceuser-detailinfo-text140">종목코드</span>
+                <span class="opoperceuser-detailinfo-text141">종목명</span>
+                <span class="opoperceuser-detailinfo-text142">보유수량</span>
+                <span class="opoperceuser-detailinfo-text143">구매가</span>
+                <span class="opoperceuser-detailinfo-text144">현재가</span>
+              </div>
+            </div>
+            <button
+              id="stockdelete"
+              type="reset"
+              class="opoperceuser-detailinfo-button08 button hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text145">
+                <span>관심종목 삭제</span>
+                <br />
+              </span>
+            </button>
+          </div>
+          <div class="opoperceuser-detailinfo-line4"></div>
+          <div class="opoperceuser-detailinfo-stock2">
+            <div class="opoperceuser-detailinfo-container56">
+              <span class="opoperceuser-detailinfo-text148">주식 부여</span>
+            </div>
+            <div class="opoperceuser-detailinfo-container57">
+              <input
+                type="text"
+                id="AddStockCode"
+                placeholder="종목 코드"
+                class="opoperceuser-detailinfo-text149 input"
+              />
+              <input
+                type="number"
+                id="AddStockAmount"
+                placeholder="수량"
+                class="opoperceuser-detailinfo-text150 input"
+              />
+              <input
+                type="number"
+                id="AddStockPrice"
+                placeholder="1주 당 가격"
+                class="opoperceuser-detailinfo-text151 input"
+              />
+              <button
+                id="addStockGo"
+                type="reset"
+                class="opoperceuser-detailinfo-button09 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text152">
+                  <span>부여하기</span>
+                  <br />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-stock3">
+            <div class="opoperceuser-detailinfo-container58">
+              <span class="opoperceuser-detailinfo-text155">
+                즉시 시장가 매도
+              </span>
+            </div>
+            <div class="opoperceuser-detailinfo-container59">
+              <input
+                type="text"
+                id="selluserStockCode"
+                placeholder="종목 코드"
+                class="opoperceuser-detailinfo-text156 input"
+              />
+              <input
+                type="number"
+                id="selluserStockAmount"
+                placeholder="수량"
+                class="opoperceuser-detailinfo-text157 input"
+              />
+              <button
+                id="selluserStockBtn"
+                type="reset"
+                class="opoperceuser-detailinfo-button10 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text158">
+                  <span>판매하기</span>
+                  <br />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-line5"></div>
+          <div class="opoperceuser-detailinfo-container60">
+            <span class="opoperceuser-detailinfo-text161">
+              로스컷 상태 : 진행 / 정지
+            </span>
+            <button
+              id="postSetLossCutStop"
+              type="reset"
+              class="opoperceuser-detailinfo-button11 hoverbtnred button"
+            >
+              <span class="opoperceuser-detailinfo-text162">
+                <span>로스컷 정지</span>
+                <br />
+              </span>
+            </button>
+            <button
+              id="postSetLossCutGo"
+              type="reset"
+              class="opoperceuser-detailinfo-button12 hoverbtnred button hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text165">
+                <span>로스컷 진행</span>
+                <br />
+              </span>
+            </button>
+          </div>
+          <div class="opoperceuser-detailinfo-user-order-buy-stop">
+            <span class="opoperceuser-detailinfo-text168">
+              매수매도 중지 상태로 변경
+            </span>
+            <button
+              id="postSetOrderStop"
+              type="reset"
+              class="opoperceuser-detailinfo-button13 hoverbtnred button"
+            >
+              <span class="opoperceuser-detailinfo-text169">
+                <span>매수 정지</span>
+                <br />
+              </span>
+            </button>
+            <button
+              id="postSetOrderStart"
+              type="reset"
+              class="opoperceuser-detailinfo-button14 hoverbtnred button hoverbtnblue"
+            >
+              <span class="opoperceuser-detailinfo-text172">
+                <span>매수 가능</span>
+                <br />
+              </span>
+            </button>
+          </div>
+          <div class="opoperceuser-detailinfo-line6"></div>
+          <div class="opoperceuser-detailinfo-container61">
+            <div class="opoperceuser-detailinfo-container62">
+              <span class="opoperceuser-detailinfo-text175">기타</span>
+            </div>
+            <div class="opoperceuser-detailinfo-container63">
+              <a
+                href="opoperloginadmin.html"
+                class="opoperceuser-detailinfo-button15 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text176">
+                  <span>유저 정보 직접보기 (웹)</span>
+                  <br />
+                </span>
+              </a>
+              <a
+                href="opoperloginadmin-mobile.html"
+                class="opoperceuser-detailinfo-button16 button hoverbtnblue"
+              >
+                <span class="opoperceuser-detailinfo-text179">
+                  <span>유저 정보 직접보기 (모바일)</span>
+                  <br />
+                </span>
+              </a>
+            </div>
+            <div class="opoperceuser-detailinfo-container64">
+              <button
+                id="postDeleteUser"
+                type="reset"
+                class="opoperceuser-detailinfo-button17 hoverbtnred button"
+              >
+                <span class="opoperceuser-detailinfo-text182">
+                  <span>
+                    유저 삭제 (장 마감 이후, 보유종목 없고, 예탁금, 담보금 0원
+                    때 진행해주세요)
+                  </span>
+                  <br />
+                </span>
+              </button>
+              <button
+                id="setnewPassword"
+                type="reset"
+                class="opoperceuser-detailinfo-button18 hoverbtnred button"
+              >
+                <span class="opoperceuser-detailinfo-text185">
+                  <span>비밀번호 리셋 : Stock123</span>
+                  <br />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="opoperceuser-detailinfo-container65"></div>
+        </div>
+        <div class="opoperceuser-detailinfo-personal-code">
+          <div>
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/stockcommonoper.js'> </script>
+<script type='text/javascript' src='/js/oper_c5_userinfo.js'> </script>
+
+
+<link rel='stylesheet' href='css/stockcommon.css'>
+<link rel='stylesheet' href='css/oper.css'>"
+            ></dangerous-html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

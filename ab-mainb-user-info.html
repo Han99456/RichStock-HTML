@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock</title>
+    <meta property="og:title" content="↗ Rich Stock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./ab-mainb-user-info.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="ab-mainb-user-info-container">
+        <div class="ab-mainb-user-info-container01">
+          <div class="ab-mainb-user-info-frame13">
+            <div id="btnLogout" class="ab-mainb-user-info-frame5 hoverbtnwhite">
+              <span class="ab-mainb-user-info-text">로그아웃</span>
+            </div>
+            <div class="ab-mainb-user-info-frame31">
+              <span class="ab-mainb-user-info-text01">회원정보 수정</span>
+            </div>
+          </div>
+        </div>
+        <div class="ab-mainb-user-info-container02">
+          <div class="ab-mainb-user-info-container03"></div>
+          <div class="ab-mainb-user-info-container04">
+            <div class="ab-mainb-user-info-container05">
+              <div class="ab-mainb-user-info-frame10">
+                <input
+                  type="text"
+                  id="userId"
+                  value="-"
+                  disabled=""
+                  class="ab-mainb-user-info-input-id input"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="비밀번호 입력"
+                  class="ab-mainb-user-info-input-pw input"
+                />
+                <input
+                  type="password"
+                  id="repassword"
+                  placeholder="비밀번호 재입력"
+                  class="ab-mainb-user-info-input-re-pw input"
+                />
+                <div class="ab-mainb-user-info-frame">
+                  <span class="ab-mainb-user-info-text02">
+                    <span>4~12글자의 영문과 숫자</span>
+                  </span>
+                  <span class="ab-mainb-user-info-text04">
+                    <span>유저 ID</span>
+                    <br class="ab-mainb-user-info-text06" />
+                    <span class="ab-mainb-user-info-text07">
+                      ID는 수정하실 수 없습니다.
+                    </span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame01">
+                  <span class="ab-mainb-user-info-text08">
+                    <span class="ab-mainb-user-info-text09">*</span>
+                    <span>비밀번호를 입력해주세요.</span>
+                  </span>
+                  <span class="ab-mainb-user-info-text11">
+                    <span>4~12글자의 영문과 숫자</span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame02">
+                  <span class="ab-mainb-user-info-text13">
+                    <span class="ab-mainb-user-info-text14">*</span>
+                    <span>비밀번호를</span>
+                    <br />
+                    <span>다시 입력해주세요.</span>
+                  </span>
+                </div>
+              </div>
+              <div class="ab-mainb-user-info-frame11">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="이름 입력"
+                  class="ab-mainb-user-info-input-name input"
+                />
+                <input
+                  type="text"
+                  id="bankName"
+                  placeholder="출금은행 입력"
+                  class="ab-mainb-user-info-input-email input"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="이메일 입력"
+                  class="ab-mainb-user-info-input-mobile input"
+                />
+                <input
+                  type="text"
+                  id="bankAccount"
+                  placeholder="계좌번호 입력"
+                  class="ab-mainb-user-info-input-bankname input"
+                />
+                <input
+                  type="number"
+                  id="mobile"
+                  placeholder="전화번호 입력"
+                  class="ab-mainb-user-info-input-bank-address input"
+                />
+                <input
+                  type="text"
+                  id="bankDepositor"
+                  placeholder="예금주 입력"
+                  class="ab-mainb-user-info-input-bank-order input"
+                />
+                <div class="ab-mainb-user-info-frame03">
+                  <span class="ab-mainb-user-info-text18">
+                    <span class="ab-mainb-user-info-text19">*</span>
+                    <span>이름</span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame04">
+                  <span class="ab-mainb-user-info-text21">
+                    <span class="ab-mainb-user-info-text22">*</span>
+                    <span>이메일</span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame05">
+                  <span class="ab-mainb-user-info-text24">
+                    <span class="ab-mainb-user-info-text25">*</span>
+                    <span>전화번호</span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame06">
+                  <span class="ab-mainb-user-info-text27">
+                    <span class="ab-mainb-user-info-text28">*</span>
+                    <span>출금은행</span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame07">
+                  <span class="ab-mainb-user-info-text30">
+                    <span class="ab-mainb-user-info-text31">*</span>
+                    <span>계좌번호</span>
+                  </span>
+                </div>
+                <div class="ab-mainb-user-info-frame08">
+                  <span class="ab-mainb-user-info-text33">
+                    <span class="ab-mainb-user-info-text34">*</span>
+                    <span>예금주</span>
+                  </span>
+                </div>
+              </div>
+              <div class="ab-mainb-user-info-group47">
+                <a href="ab-main.html" class="ab-mainb-user-info-navlink">
+                  <div
+                    onclick="postSetTelegram()"
+                    class="ab-mainb-user-info-btn-cancel hoverbtnwhite"
+                  >
+                    <span class="ab-mainb-user-info-text36">
+                      <span>취소</span>
+                    </span>
+                  </div>
+                </a>
+                <button
+                  id="memberinfo"
+                  type="button"
+                  onclick="postSetTelegram()"
+                  class="ab-mainb-user-info-button hoverbtnblue"
+                >
+                  완료
+                </button>
+              </div>
+              <div class="ab-mainb-user-info-container06"></div>
+              <div class="ab-mainb-user-info-frame09">
+                <input
+                  type="text"
+                  id="telegram"
+                  placeholder="텔레그램 ID 입력"
+                  class="ab-mainb-user-info-input-snsid input"
+                />
+                <span class="ab-mainb-user-info-text38">
+                  <span class="ab-mainb-user-info-text39">
+                    리치스탁은 주문과 체결 등
+                  </span>
+                  <span class="ab-mainb-user-info-text40">[중요 정보]</span>
+                  <span class="ab-mainb-user-info-text41">를</span>
+                  <span class="ab-mainb-user-info-text42">텔레그램 알림</span>
+                  <span class="ab-mainb-user-info-text43">으로</span>
+                  <br class="ab-mainb-user-info-text44" />
+                  <span class="ab-mainb-user-info-text45">
+                    전달드립니다. 알림 연동 신청을 꼭 진행해주세요.
+                  </span>
+                  <br class="ab-mainb-user-info-text46" />
+                </span>
+                <span class="ab-mainb-user-info-text47">
+                  <span class="ab-mainb-user-info-text48">연동 방법</span>
+                  <br />
+                  <span>
+                    &nbsp; 1. @표기를 제외한 텔레그램 아이디를 정확하게
+                    입력해주세요.
+                  </span>
+                  <br />
+                  <span>&nbsp; 2.&nbsp;</span>
+                  <span class="ab-mainb-user-info-text53">
+                    [텔레그램 알림 연동]
+                  </span>
+                  <span>버튼 선택 후, 시작하기 버튼을 눌러주세요.</span>
+                  <br />
+                </span>
+                <span class="ab-mainb-user-info-text56">@</span>
+                <span class="ab-mainb-user-info-text57">
+                  <span class="ab-mainb-user-info-text58">*</span>
+                  <span>거래 알림 서비스</span>
+                </span>
+                <a
+                  href="https://t.me/rich110099_bot"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="ab-mainb-user-info-link"
+                >
+                  <div
+                    id="telejoin"
+                    class="ab-mainb-user-info-container07 hoverbtnblue"
+                  >
+                    <span class="ab-mainb-user-info-text60">
+                      텔레그램 알림 연동
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ab-mainb-user-info-container08"></div>
+        <div id="modal1" class="ab-mainb-user-info-modal1 empty01-notice">
+          <div class="ab-mainb-user-info-frame000-member-tos">
+            <div class="ab-mainb-user-info-container09">
+              <img
+                alt="Rectangle21209"
+                src="public/external/rectangle21209-4h1-200h.png"
+                class="ab-mainb-user-info-rectangle2"
+              />
+              <div class="ab-mainb-user-info-info">
+                <img
+                  alt="UnionI120"
+                  src="public/external/unioni120-xae8.svg"
+                  class="ab-mainb-user-info-union"
+                />
+              </div>
+              <span class="ab-mainb-user-info-text61">회원정보 수정</span>
+            </div>
+            <div class="ab-mainb-user-info-container10"></div>
+            <div class="ab-mainb-user-info-container11">
+              <span class="ab-mainb-user-info-text62">
+                <span>회원 정보를 수정하였습니다.</span>
+                <br />
+              </span>
+            </div>
+            <div class="ab-mainb-user-info-container12"></div>
+            <div class="ab-mainb-user-info-container13">
+              <div class="btn-close-modal1 button hoverbtnblue">
+                <span class="ab-mainb-user-info-text65">확인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modal2" class="ab-mainb-user-info-modal2 empty02-stock">
+          <div class="ab-mainb-user-info-frame000-member-tos1">
+            <div class="ab-mainb-user-info-container15">
+              <img
+                alt="Rectangle21209"
+                src="public/external/rectangle21209-4h1-200h.png"
+                class="ab-mainb-user-info-rectangle21"
+              />
+              <div class="ab-mainb-user-info-info1">
+                <img
+                  alt="UnionI120"
+                  src="public/external/unioni120-xae8.svg"
+                  class="ab-mainb-user-info-union1"
+                />
+              </div>
+              <span class="ab-mainb-user-info-text66">회원정보 수정</span>
+            </div>
+            <div class="ab-mainb-user-info-container16"></div>
+            <div class="ab-mainb-user-info-container17">
+              <span class="ab-mainb-user-info-text67">
+                <span>필수 회원정보를 모두 기입하면,</span>
+                <br />
+                <span>수정이 완료됩니다.</span>
+              </span>
+            </div>
+            <div class="ab-mainb-user-info-container18"></div>
+            <div class="ab-mainb-user-info-container19">
+              <div class="button hoverbtnblue btn-close-modal2">
+                <span class="ab-mainb-user-info-text71">확인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="top-top">
+          <div class="top-container">
+            <div id="globaltext" class="top-container01">
+              <div class="top-group29">
+                <span class="top-text">KOSPI</span>
+                <span id="Bind1" class="top-text01">-</span>
+                <span id="Bind2" class="top-text02"><span>-</span></span>
+              </div>
+              <div class="top-group30">
+                <span class="top-text03"><span>KOSDAQ</span></span>
+                <span id="Bind3" class="top-text05">-</span>
+                <span id="Bind4" class="top-text06">-</span>
+              </div>
+              <div class="top-group31">
+                <span class="top-text07">NASDAQ</span>
+                <span id="Bind5" class="top-text08">-</span>
+                <span id="Bind6" class="top-text09">-</span>
+              </div>
+              <div class="top-group311">
+                <span class="top-text10">S&amp;P500</span>
+                <span id="Bind7" class="top-text11">-</span>
+                <span id="Bind8" class="top-text12">-</span>
+              </div>
+            </div>
+            <div class="top-container02"></div>
+          </div>
+          <div class="top-container03 dropdown1_Window">
+            <div class="top-container04">
+              <a href="af-trading1.html">
+                <div class="top-container05">
+                  <span class="top-text13 dropdown_text">
+                    <span>거래내역</span>
+                  </span>
+                </div>
+              </a>
+              <a href="af-trading2.html">
+                <div class="top-container06">
+                  <span class="top-text14 dropdown_text">
+                    <span>손익정보</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="top-top1">
+            <div class="top-frame26">
+              <div class="top-container07">
+                <span id="topuserid1" class="top-text15">-</span>
+                <span class="top-text16">&nbsp;님 방문을 환영합니다.</span>
+              </div>
+              <div class="top-container08">
+                <a href="ab-maind-cs.html" class="top-navlink02">
+                  <div class="top-group7 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon">
+                      <path
+                        d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM746.6 760.8c-177.6 0-239.2-80-272-179.6l-32.8-102.6c-24.6-75-53.4-133.4-143.6-133.4-62.6 0-126.2 45.2-126.2 171.4 0 98.6 50.2 160.2 121.2 160.2 80 0 133.4-59.6 133.4-59.6l32.8 89.2c0 0-55.4 54.4-171.4 54.4-144 0-224-84-224-240 0-162.2 80-257.6 231-257.6 136.6 0 205.2 49.2 248.4 182.6l33.8 102.6c24.6 75 67.8 129.4 171.4 129.4 69.8 0 106.8-15.4 106.8-53.4 0-29.8-17.4-51.4-69.8-63.6l-69.8-16.4c-85.2-20.6-119-64.6-119-134.4 0-111.8 90.4-146.8 182.6-146.8 104.6 0 168.4 38 176.6 130.4l-102.6 12.4c-4.2-44.2-30.8-62.6-80-62.6-45.2 0-72.8 20.6-72.8 55.4 0 30.8 13.4 49.2 58.4 59.6l65.6 14.4c88.2 20.6 135.4 63.6 135.4 146.8 0 102.2-86.2 141.2-213.4 141.2z"
+                      ></path>
+                    </svg>
+                    <span class="top-text17"><span>고객센터</span></span>
+                  </div>
+                </a>
+                <a href="ab-mainb-user-info.html" class="top-navlink03">
+                  <div class="top-group71 hoverbtnblue">
+                    <svg
+                      viewBox="0 0 1170.2857142857142 1024"
+                      class="top-icon2"
+                    >
+                      <path
+                        d="M512 692.571c0 41.714-27.429 75.429-61.143 75.429h-243.429c-33.714 0-61.143-33.714-61.143-75.429 0-75.429 18.286-162.286 93.714-162.286 22.857 22.857 54.286 36.571 89.143 36.571s66.286-13.714 89.143-36.571c75.429 0 93.714 86.857 93.714 162.286zM438.857 438.857c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM1024 676.571v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM804.571 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-182.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h182.857c10.286 0 18.286 8 18.286 18.286zM1024 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-109.714c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h109.714c10.286 0 18.286 8 18.286 18.286zM1024 384v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM1097.143 859.429v-640h-1024v640c0 9.714 8.571 18.286 18.286 18.286h987.429c9.714 0 18.286-8.571 18.286-18.286zM1170.286 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-987.429c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h987.429c50.286 0 91.429 41.143 91.429 91.429z"
+                      ></path>
+                    </svg>
+                    <span class="top-text18"><span>회원정보</span></span>
+                  </div>
+                </a>
+                <a href="index.html" class="top-navlink04">
+                  <div class="top-group72 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon4">
+                      <path
+                        d="M384 512h-320v-128h320v-128l192 192-192 192zM1024 0v832l-384 192v-192h-384v-256h64v192h320v-576l256-128h-576v256h-64v-320z"
+                      ></path>
+                    </svg>
+                    <span class="top-text19"><span>로그인</span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="top-container09"></div>
+            <div class="top-frame13">
+              <div class="top-container10 dropmain">
+                <a
+                  href="ac-interested-stock01.html"
+                  class="top-text20 dropdown_text"
+                >
+                  <span>관심종목</span>
+                </a>
+                <div class="top-container11 dropdown1_Window">
+                  <div class="top-container12">
+                    <a href="ac-interested-stock01.html">
+                      <div class="top-container13">
+                        <span class="top-text22 dropdown_text">
+                          <span>관심종목 신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock02.html">
+                      <div class="top-container14">
+                        <span class="top-text23 dropdown_text">
+                          <span>관심종목 편집</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock03.html">
+                      <div class="top-container15">
+                        <span class="top-text24 dropdown_text">
+                          <span>승인요청 목록</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ad-order.html" class="top-text25 dropdown_text">
+                <span>종합주문</span>
+              </a>
+              <a href="ae-over-night.html" class="top-text27 dropdown_text">
+                <span>오버나잇</span>
+              </a>
+              <div class="top-container16 dropmain">
+                <a href="af-trading1.html" class="top-text29 dropdown_text">
+                  <span>거래내역</span>
+                </a>
+              </div>
+              <div class="top-container17 dropmain">
+                <a href="ag-bank1.html" class="top-text31 dropdown_text">
+                  계좌종합
+                </a>
+                <div class="top-container18 dropdown1_Window">
+                  <div class="top-container19">
+                    <a href="ag-bank1.html">
+                      <div class="top-container20">
+                        <span class="top-text32 dropdown_text">
+                          <span>계좌종합</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank2.html">
+                      <div class="top-container21">
+                        <span class="top-text33 dropdown_text">
+                          <span>입금확인 요청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank3.html">
+                      <div class="top-container22">
+                        <span class="top-text34 dropdown_text">
+                          <span>출금신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank4.html">
+                      <div class="top-container23">
+                        <span class="top-text35 dropdown_text">
+                          <span>입출금확인</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ab-main.html" class="top-text36 hoverbtnSubmenubluetext">
+                RICHSTOCK
+              </a>
+            </div>
+          </div>
+        </footer>
+        <div class="ab-mainb-user-info-java-code-personal">
+          <div>
+            <dangerous-html
+              html="    <script type='text/javascript' src='/js/Stock0202userinfopc.js'> </script>    "
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="bottom-bottom">
+          <div class="bottom-container">
+            <span class="bottom-text">
+              <span>Copyright(c) 2023 RICHSTOCK All Right Reserved.</span>
+            </span>
+            <div class="bottom-frame-bg">
+              <a
+                href="ab-mainc-intro.html"
+                class="bottom-text02 hoverbtnblacktext"
+              >
+                <span>리치스탁 소개</span>
+              </a>
+              <a
+                href="ab-maine-rule.html"
+                class="bottom-text03 hoverbtnblacktext"
+              >
+                <span>거래 규정</span>
+              </a>
+              <a
+                href="ab-maind-cs.html"
+                class="bottom-text04 hoverbtnblacktext"
+              >
+                <span>고객센터</span>
+              </a>
+              <a
+                href="ab-mainf-tos.html"
+                class="bottom-text05 hoverbtnblacktext"
+              >
+                <span>이용약관</span>
+              </a>
+            </div>
+            <img
+              alt="Icontele21273"
+              src="public/external/icontele21273-gqug-200h.png"
+              class="bottom-icontele2"
+            />
+            <div class="bottom-frame18">
+              <span class="bottom-text06">Telegram. @rich110099</span>
+              <span class="bottom-text07">고객지원센터</span>
+              <a href="ab-maind-cs.html" class="bottom-navlink">
+                <img
+                  alt="HeadsetundefinedGlyphundefined1273"
+                  src="public/external/headsetundefinedglyphundefined1273-h5.svg"
+                  class="bottom-headsetundefined-glyphundefined"
+                />
+              </a>
+            </div>
+            <a href="ab-main.html" class="bottom-text08 hoverbtnblacktext">
+              <span>RICHSTOCK</span>
+            </a>
+          </div>
+        </div>
+        <div class="ab-mainb-user-info-for-common-info">
+          <span id="topAccCode" class="ab-mainb-user-info-text72">Text</span>
+          <span id="topuserid2" class="ab-mainb-user-info-text73">Text</span>
+          <span id="topdep" class="ab-mainb-user-info-text74">Text</span>
+          <span id="topav" class="ab-mainb-user-info-text75">Text</span>
+          <span id="topav1" class="ab-mainb-user-info-text76">Text</span>
+          <span id="topav2" class="ab-mainb-user-info-text77">Text</span>
+          <span id="topav3" class="ab-mainb-user-info-text78">Text</span>
+          <span id="topmrg" class="ab-mainb-user-info-text79">Text</span>
+        </div>
+        <div
+          class="java-code-popup-modal-code-embed java-code-popup-modal-root-class-name6"
+        >
+          <div>
+            <dangerous-html
+              html="    <script type='text/javascript' src='/js/stockmodal1.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal2.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal3.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div
+          class="java-code-p-main-code-embed java-code-p-main-root-class-name1"
+        >
+          <div>
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/stockcommonpc.js'> </script>
+
+<link rel='stylesheet' href='css/stockcommon.css'>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="ab-mainb-user-info-modalfortemp">
+          <img
+            id="btn-modal1"
+            alt="Icontele21273"
+            src="public/external/icontele21273-gqug-200h-200h.png"
+            class="ab-mainb-user-info-icontele2 btn-close-modal1"
+          />
+          <img
+            id="btn-modal2"
+            alt="Icontele21273"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a13bafc3-205d-4106-adc1-b311a55ef3ee/b2f3fb10-4ebf-4380-bf41-f9c74291aec2?org_if_sml=1728"
+            class="ab-mainb-user-info-icontele21 btn-close-modal2"
+          />
+          <img
+            id="btn-modal3"
+            alt="Icontele21273"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a13bafc3-205d-4106-adc1-b311a55ef3ee/b2f3fb10-4ebf-4380-bf41-f9c74291aec2?org_if_sml=1728"
+            class="ab-mainb-user-info-icontele22 btn-close-modal3"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

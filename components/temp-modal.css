@@ -1,0 +1,25 @@
+.temp-modal-container {
+  width: 481px;
+  height: 43px;
+  display: flex;
+  z-index: 105;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.temp-modal-icontele2 {
+  width: 43px;
+  height: 43px;
+}
+.temp-modal-icontele21 {
+  width: 43px;
+  height: 43px;
+}
+.temp-modal-icontele22 {
+  width: 43px;
+  height: 43px;
+}
+.temp-modal-icontele23 {
+  width: 43px;
+  height: 43px;
+}

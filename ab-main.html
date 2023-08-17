@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock</title>
+    <meta property="og:title" content="↗ Rich Stock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./ab-main.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="ab-main-container">
+        <footer class="top-top">
+          <div class="top-container">
+            <div id="globaltext" class="top-container01">
+              <div class="top-group29">
+                <span class="top-text">KOSPI</span>
+                <span id="Bind1" class="top-text01">-</span>
+                <span id="Bind2" class="top-text02"><span>-</span></span>
+              </div>
+              <div class="top-group30">
+                <span class="top-text03"><span>KOSDAQ</span></span>
+                <span id="Bind3" class="top-text05">-</span>
+                <span id="Bind4" class="top-text06">-</span>
+              </div>
+              <div class="top-group31">
+                <span class="top-text07">NASDAQ</span>
+                <span id="Bind5" class="top-text08">-</span>
+                <span id="Bind6" class="top-text09">-</span>
+              </div>
+              <div class="top-group311">
+                <span class="top-text10">S&amp;P500</span>
+                <span id="Bind7" class="top-text11">-</span>
+                <span id="Bind8" class="top-text12">-</span>
+              </div>
+            </div>
+            <div class="top-container02"></div>
+          </div>
+          <div class="top-container03 dropdown1_Window">
+            <div class="top-container04">
+              <a href="af-trading1.html">
+                <div class="top-container05">
+                  <span class="top-text13 dropdown_text">
+                    <span>거래내역</span>
+                  </span>
+                </div>
+              </a>
+              <a href="af-trading2.html">
+                <div class="top-container06">
+                  <span class="top-text14 dropdown_text">
+                    <span>손익정보</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="top-top1">
+            <div class="top-frame26">
+              <div class="top-container07">
+                <span id="topuserid1" class="top-text15">-</span>
+                <span class="top-text16">&nbsp;님 방문을 환영합니다.</span>
+              </div>
+              <div class="top-container08">
+                <a href="ab-maind-cs.html" class="top-navlink02">
+                  <div class="top-group7 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon">
+                      <path
+                        d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM746.6 760.8c-177.6 0-239.2-80-272-179.6l-32.8-102.6c-24.6-75-53.4-133.4-143.6-133.4-62.6 0-126.2 45.2-126.2 171.4 0 98.6 50.2 160.2 121.2 160.2 80 0 133.4-59.6 133.4-59.6l32.8 89.2c0 0-55.4 54.4-171.4 54.4-144 0-224-84-224-240 0-162.2 80-257.6 231-257.6 136.6 0 205.2 49.2 248.4 182.6l33.8 102.6c24.6 75 67.8 129.4 171.4 129.4 69.8 0 106.8-15.4 106.8-53.4 0-29.8-17.4-51.4-69.8-63.6l-69.8-16.4c-85.2-20.6-119-64.6-119-134.4 0-111.8 90.4-146.8 182.6-146.8 104.6 0 168.4 38 176.6 130.4l-102.6 12.4c-4.2-44.2-30.8-62.6-80-62.6-45.2 0-72.8 20.6-72.8 55.4 0 30.8 13.4 49.2 58.4 59.6l65.6 14.4c88.2 20.6 135.4 63.6 135.4 146.8 0 102.2-86.2 141.2-213.4 141.2z"
+                      ></path>
+                    </svg>
+                    <span class="top-text17"><span>고객센터</span></span>
+                  </div>
+                </a>
+                <a href="ab-mainb-user-info.html" class="top-navlink03">
+                  <div class="top-group71 hoverbtnblue">
+                    <svg
+                      viewBox="0 0 1170.2857142857142 1024"
+                      class="top-icon2"
+                    >
+                      <path
+                        d="M512 692.571c0 41.714-27.429 75.429-61.143 75.429h-243.429c-33.714 0-61.143-33.714-61.143-75.429 0-75.429 18.286-162.286 93.714-162.286 22.857 22.857 54.286 36.571 89.143 36.571s66.286-13.714 89.143-36.571c75.429 0 93.714 86.857 93.714 162.286zM438.857 438.857c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM1024 676.571v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM804.571 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-182.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h182.857c10.286 0 18.286 8 18.286 18.286zM1024 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-109.714c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h109.714c10.286 0 18.286 8 18.286 18.286zM1024 384v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM1097.143 859.429v-640h-1024v640c0 9.714 8.571 18.286 18.286 18.286h987.429c9.714 0 18.286-8.571 18.286-18.286zM1170.286 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-987.429c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h987.429c50.286 0 91.429 41.143 91.429 91.429z"
+                      ></path>
+                    </svg>
+                    <span class="top-text18"><span>회원정보</span></span>
+                  </div>
+                </a>
+                <a href="index.html" class="top-navlink04">
+                  <div class="top-group72 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon4">
+                      <path
+                        d="M384 512h-320v-128h320v-128l192 192-192 192zM1024 0v832l-384 192v-192h-384v-256h64v192h320v-576l256-128h-576v256h-64v-320z"
+                      ></path>
+                    </svg>
+                    <span class="top-text19"><span>로그인</span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="top-container09"></div>
+            <div class="top-frame13">
+              <div class="top-container10 dropmain">
+                <a
+                  href="ac-interested-stock01.html"
+                  class="top-text20 dropdown_text"
+                >
+                  <span>관심종목</span>
+                </a>
+                <div class="top-container11 dropdown1_Window">
+                  <div class="top-container12">
+                    <a href="ac-interested-stock01.html">
+                      <div class="top-container13">
+                        <span class="top-text22 dropdown_text">
+                          <span>관심종목 신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock02.html">
+                      <div class="top-container14">
+                        <span class="top-text23 dropdown_text">
+                          <span>관심종목 편집</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock03.html">
+                      <div class="top-container15">
+                        <span class="top-text24 dropdown_text">
+                          <span>승인요청 목록</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ad-order.html" class="top-text25 dropdown_text">
+                <span>종합주문</span>
+              </a>
+              <a href="ae-over-night.html" class="top-text27 dropdown_text">
+                <span>오버나잇</span>
+              </a>
+              <div class="top-container16 dropmain">
+                <a href="af-trading1.html" class="top-text29 dropdown_text">
+                  <span>거래내역</span>
+                </a>
+              </div>
+              <div class="top-container17 dropmain">
+                <a href="ag-bank1.html" class="top-text31 dropdown_text">
+                  계좌종합
+                </a>
+                <div class="top-container18 dropdown1_Window">
+                  <div class="top-container19">
+                    <a href="ag-bank1.html">
+                      <div class="top-container20">
+                        <span class="top-text32 dropdown_text">
+                          <span>계좌종합</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank2.html">
+                      <div class="top-container21">
+                        <span class="top-text33 dropdown_text">
+                          <span>입금확인 요청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank3.html">
+                      <div class="top-container22">
+                        <span class="top-text34 dropdown_text">
+                          <span>출금신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank4.html">
+                      <div class="top-container23">
+                        <span class="top-text35 dropdown_text">
+                          <span>입출금확인</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ab-main.html" class="top-text36 hoverbtnSubmenubluetext">
+                RICHSTOCK
+              </a>
+            </div>
+          </div>
+        </footer>
+        <div class="ab-main-info">
+          <div class="ab-main-container01">
+            <div class="ab-main-frame15">
+              <div class="ab-main-container02">
+                <span class="ab-main-text">계좌코드 :</span>
+                <span id="topAccCode" class="ab-main-text001">-</span>
+              </div>
+              <div class="ab-main-container03">
+                <div class="ab-main-container04">
+                  <img
+                    alt="public/external/apptitleundefinedglyphundefined1271-79dh.svg"
+                    src="public/external/apptitleundefinedglyphundefined1271-79dh.svg"
+                    class="ab-main-app-titleundefined-glyphundefined"
+                  />
+                  <span class="ab-main-text002">주문가능금액 :</span>
+                  <span id="topav" class="ab-main-text003">-</span>
+                </div>
+                <div class="ab-main-container05">
+                  <img
+                    alt="AppTitleundefinedGlyphundefined1345"
+                    src="public/external/apptitleundefinedglyphundefined1271-79dh.svg"
+                    class="ab-main-app-titleundefined-glyphundefined1"
+                  />
+                  <span class="ab-main-text004">평가금액합계 :</span>
+                  <span id="topmrg" class="ab-main-text005">-</span>
+                </div>
+                <div class="ab-main-container06">
+                  <img
+                    alt="AppTitleundefinedGlyphundefined1345"
+                    src="public/external/apptitleundefinedglyphundefined1271-79dh.svg"
+                    class="ab-main-app-titleundefined-glyphundefined2"
+                  />
+                  <span class="ab-main-text006">예탁금 :</span>
+                  <span id="topdep" class="ab-main-text007">-</span>
+                </div>
+              </div>
+              <div class="ab-main-container07">
+                <span id="topuserid2" class="ab-main-text008">-</span>
+                <span class="ab-main-text009">
+                  <span>님 방문을 환영합니다.</span>
+                </span>
+              </div>
+            </div>
+            <div class="ab-main-frame">
+              <a href="ag-bank4.html" class="ab-main-navlink">
+                <div class="ab-main-container08 hoverbtnwhite">
+                  <div class="ab-main-frame21">
+                    <span class="ab-main-text011">입금확인요청</span>
+                    <img
+                      alt="VehicleCarProfileRTLundefinedGlyphundefined1271"
+                      src="public/external/vehiclecarprofilertlundefinedglyphundefined1271-eyc9.svg"
+                      class="ab-main-vehicle-car-profile-r-lundefined-glyphundefined"
+                    />
+                  </div>
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon">
+                    <path d="M342 214l468 298-468 298v-596z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="ac-interested-stock01.html" class="ab-main-navlink1">
+                <div class="ab-main-container09 hoverbtnwhite">
+                  <div class="ab-main-frame22">
+                    <span class="ab-main-text012"><span>관심종목</span></span>
+                    <img
+                      alt="AppsAddInundefinedGlyphundefined1271"
+                      src="public/external/appsaddinundefinedglyphundefined1271-k09j.svg"
+                      class="ab-main-apps-add-inundefined-glyphundefined"
+                    />
+                  </div>
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon02">
+                    <path d="M342 214l468 298-468 298v-596z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="ad-order.html" class="ab-main-navlink2">
+                <div class="ab-main-container10 hoverbtnwhite">
+                  <div class="ab-main-frame23">
+                    <span class="ab-main-text014"><span>종합주문</span></span>
+                    <img
+                      alt="DataTrendingundefinedGlyphundefined1271"
+                      src="public/external/datatrendingundefinedglyphundefined1271-5wui.svg"
+                      class="ab-main-data-trendingundefined-glyphundefined"
+                    />
+                  </div>
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon04">
+                    <path d="M342 214l468 298-468 298v-596z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="ab-maind-cs.html" class="ab-main-navlink3">
+                <div class="ab-main-container11 hoverbtnwhite">
+                  <div class="ab-main-frame20">
+                    <span class="ab-main-text016">고객센터</span>
+                    <img
+                      alt="HandshakeundefinedGlyphundefined1271"
+                      src="public/external/handshakeundefinedglyphundefined1271-9vs.svg"
+                      class="ab-main-handshakeundefined-glyphundefined"
+                    />
+                  </div>
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon06">
+                    <path d="M342 214l468 298-468 298v-596z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="ab-mainc-intro.html" class="ab-main-navlink4">
+                <div class="ab-main-container12 hoverbtnblue">
+                  <div class="ab-main-frame24">
+                    <span class="ab-main-text017">리치스탁 소개</span>
+                    <div class="ab-main-handshakeundefined-glyphundefined1">
+                      <img
+                        alt="ConnectorundefinedGlyphundefined1281"
+                        src="public/external/connectorundefinedglyphundefined1281-rpq.svg"
+                        class="ab-main-connectorundefined-glyphundefined"
+                      />
+                    </div>
+                  </div>
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon08">
+                    <path d="M342 214l468 298-468 298v-596z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="ab-maine-rule.html" class="ab-main-navlink5">
+                <div class="ab-main-container13 hoverbtnblue">
+                  <div class="ab-main-frame25">
+                    <span class="ab-main-text018"><span>거래 규정</span></span>
+                    <img
+                      alt="RocketundefinedGlyphundefined1281"
+                      src="public/external/rocketundefinedglyphundefined1281-uoai.svg"
+                      class="ab-main-rocketundefined-glyphundefined"
+                    />
+                  </div>
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon10">
+                    <path d="M342 214l468 298-468 298v-596z"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="ab-main-table-1">
+          <div class="ab-main-table-title">
+            <div class="ab-main-notice">
+              <span class="ab-main-text020"><span>공지사항</span></span>
+            </div>
+          </div>
+          <div class="ab-main-table-top">
+            <img
+              alt="Rectangle1271"
+              src="public/external/rectangle1271-lkb6-200h.png"
+              class="ab-main-rectangle"
+            />
+            <div class="ab-main-container14">
+              <span class="ab-main-text022">글번호</span>
+              <span class="ab-main-text023">구분</span>
+              <span class="ab-main-text024">작성일</span>
+              <span class="ab-main-text025">공지 제목</span>
+            </div>
+          </div>
+          <div id="noAPI" class="ab-main-table-alret">
+            <div class="ab-main-container15">
+              <span class="ab-main-text026">
+                <span>리치스탁 정규 운영시간 [08:40~16:00]</span>
+                <span class="ab-main-text028">
+                  이 아닐 경우, 거래소 서버가 불안정 할 수 있습니다.
+                </span>
+                <br class="ab-main-text029" />
+                <span class="ab-main-text030">
+                  유저의 보유종목/ 통장 정보의 확인과 통상적인 운영은
+                  진행되지만, 실시간 종목 정보의 연동은 어려울 수 있습니다.
+                </span>
+              </span>
+            </div>
+          </div>
+          <div id="empty01-notice" class="ab-main-container16 empty01-notice">
+            <span class="ab-main-text031">등록된 공지사항이 없습니다.</span>
+          </div>
+          <div class="ab-main-table-list">
+            <div class="ab-main-container17 table-notice">
+              <div id="SampleA" class="ab-main-line-white">
+                <div class="ab-main-bg"></div>
+                <div class="ab-main-text032">
+                  <span class="ab-main-text033">중요</span>
+                  <span class="ab-main-text034">중요</span>
+                  <span class="ab-main-text035">2023.05.02</span>
+                  <span class="ab-main-text036">
+                    어뷰징 및 사기에 대한 대처
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ab-main-line-end"><div class="ab-main-bg1"></div></div>
+        </div>
+        <div class="ab-main-table-3">
+          <div class="ab-main-table-title1">
+            <div class="ab-main-notice1">
+              <span class="ab-main-text037">보유종목</span>
+            </div>
+          </div>
+          <div class="ab-main-table-top1">
+            <img
+              alt="Rectangle1271"
+              src="public/external/rectangle1271-lkb6-200h.png"
+              class="ab-main-rectangle1"
+            />
+            <div class="ab-main-container18">
+              <span class="ab-main-text038">종목코드</span>
+              <span class="ab-main-text039">종목명</span>
+              <span class="ab-main-text040">보유 주식수</span>
+              <span class="ab-main-text041">매수가</span>
+              <span class="ab-main-text042">평가금액</span>
+            </div>
+          </div>
+          <div id="empty02-stock" class="ab-main-container19 empty02-stock">
+            <span class="ab-main-text043">보유중인 종목이 없습니다.</span>
+          </div>
+          <div id="dataloading2" class="ab-main-container20 dataloading2">
+            <span class="ab-main-text044 loadingtext2">
+              고객님의 데이터를 불러오는 중입니다.
+            </span>
+          </div>
+          <div class="ab-main-table-list1">
+            <div class="ab-main-container21 table-mystock">
+              <div id="SampleC" class="ab-main-line-white1">
+                <div class="ab-main-bg2"></div>
+                <div class="ab-main-text045">
+                  <span class="ab-main-text046">코스닥</span>
+                  <span class="ab-main-text047">삼성생명</span>
+                  <span class="ab-main-text048">15,210,220 원</span>
+                  <span class="ab-main-text049">15,210,220 원</span>
+                  <span class="ab-main-text050">+1.5%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ab-main-line-end1"><div class="ab-main-bg3"></div></div>
+          <div class="ab-main-page"></div>
+        </div>
+        <div class="ab-main-table-2">
+          <div class="ab-main-table-title2">
+            <div class="ab-main-notice2">
+              <span class="ab-main-text051">관심종목</span>
+            </div>
+          </div>
+          <div class="ab-main-table-top2">
+            <img
+              alt="Rectangle1271"
+              src="public/external/rectangle1271-lkb6-200h.png"
+              class="ab-main-rectangle2"
+            />
+            <div class="ab-main-container22">
+              <span class="ab-main-text052">종목코드</span>
+              <span class="ab-main-text053">종목명</span>
+              <span class="ab-main-text054">전일종가</span>
+              <span class="ab-main-text055">현재가</span>
+              <span class="ab-main-text056">전일비</span>
+            </div>
+          </div>
+          <div
+            id="empty03-interest"
+            class="ab-main-container23 empty03-interest"
+          >
+            <span class="ab-main-text057">등록된 관심종목이 없습니다.</span>
+          </div>
+          <div id="dataloading1" class="ab-main-container24 dataloading1">
+            <span class="ab-main-text058 loadingtext1">
+              고객님의 데이터를 불러오는 중입니다.
+            </span>
+          </div>
+          <div class="ab-main-table-list2">
+            <div class="ab-main-container25 table-myinterest">
+              <div id="SampleB" class="ab-main-line-white2">
+                <div class="ab-main-bg4"></div>
+                <div class="ab-main-text059">
+                  <span class="ab-main-text060">코스닥</span>
+                  <span class="ab-main-text061">삼성생명</span>
+                  <span class="ab-main-text062">15,210,220 원</span>
+                  <span class="ab-main-text063">15,210,220 원</span>
+                  <span class="ab-main-text064">+1.5%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ab-main-line-end2"><div class="ab-main-bg5"></div></div>
+          <div class="ab-main-page1"></div>
+        </div>
+        <div class="ab-main-container26"></div>
+        <div class="bottom-bottom">
+          <div class="bottom-container">
+            <span class="bottom-text">
+              <span>Copyright(c) 2023 RICHSTOCK All Right Reserved.</span>
+            </span>
+            <div class="bottom-frame-bg">
+              <a
+                href="ab-mainc-intro.html"
+                class="bottom-text02 hoverbtnblacktext"
+              >
+                <span>리치스탁 소개</span>
+              </a>
+              <a
+                href="ab-maine-rule.html"
+                class="bottom-text03 hoverbtnblacktext"
+              >
+                <span>거래 규정</span>
+              </a>
+              <a
+                href="ab-maind-cs.html"
+                class="bottom-text04 hoverbtnblacktext"
+              >
+                <span>고객센터</span>
+              </a>
+              <a
+                href="ab-mainf-tos.html"
+                class="bottom-text05 hoverbtnblacktext"
+              >
+                <span>이용약관</span>
+              </a>
+            </div>
+            <img
+              alt="Icontele21273"
+              src="public/external/icontele21273-gqug-200h.png"
+              class="bottom-icontele2"
+            />
+            <div class="bottom-frame18">
+              <span class="bottom-text06">Telegram. @rich110099</span>
+              <span class="bottom-text07">고객지원센터</span>
+              <a href="ab-maind-cs.html" class="bottom-navlink">
+                <img
+                  alt="HeadsetundefinedGlyphundefined1273"
+                  src="public/external/headsetundefinedglyphundefined1273-h5.svg"
+                  class="bottom-headsetundefined-glyphundefined"
+                />
+              </a>
+            </div>
+            <a href="ab-main.html" class="bottom-text08 hoverbtnblacktext">
+              <span>RICHSTOCK</span>
+            </a>
+          </div>
+        </div>
+        <div id="modal1" class="ab-main-modal1 modal-overlay1">
+          <div class="ab-main-container27">
+            <span id="noti_title" class="ab-main-text065">
+              <span>[중요] 거래 유의사항</span>
+            </span>
+            <span id="noti_date" class="ab-main-text067">2023.01.24</span>
+            <div class="ab-main-container28">
+              <span id="noti_text" class="ab-main-text068">
+                <span>여기는 리치스탁입니다.</span>
+                <br />
+                <span>리치스탁은 공정하고 원활한..</span>
+                <br />
+                <br />
+                <span>여기는 리치스탁입니다.</span>
+                <br />
+                <span>
+                  리치스탁은 공정하고 원활한.. 여기는 리치스탁입니다. 리치스탁은
+                  공정하고 원활한..
+                </span>
+                <br />
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한..</span>
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한..</span>
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한..</span>
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한..</span>
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한..</span>
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한..</span>
+                <br />
+                <span>여기는 리치스탁입니다. 리치스탁은 공정하고 원활한.</span>
+              </span>
+            </div>
+            <button type="reset" class="ab-main-button btn-close-modal1 button">
+              닫기
+            </button>
+          </div>
+        </div>
+        <div id="modal2" class="ab-main-modal2 modal-overlay2">
+          <div class="ab-main-frame000-login03cs">
+            <div class="ab-main-container29">
+              <div class="ab-main-container30">
+                <div class="ab-main-container31">
+                  <svg viewBox="0 0 1024 1024" class="ab-main-icon12">
+                    <path
+                      d="M554 598v-172h-84v172h84zM554 768v-86h-84v86h84zM42 896l470-810 470 810h-940z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="ab-main-text092">중요 공지사항</span>
+              </div>
+            </div>
+            <div class="ab-main-container32"></div>
+            <div class="ab-main-container33">
+              <span class="ab-main-text093">
+                <span>1 거래소 수수료 율이 변경됩니다.</span>
+                <br />
+                <span>2</span>
+                <br />
+                <span>3 자세한 것은 공지를 참조해주세요.</span>
+                <br />
+                <span>4</span>
+                <br />
+                <span>5</span>
+                <br />
+                <span>6</span>
+                <br />
+                <span>7</span>
+                <br />
+                <span>8</span>
+                <br />
+                <span>9</span>
+                <br />
+                <span>10</span>
+                <br />
+              </span>
+            </div>
+            <div class="ab-main-container34"></div>
+            <div class="ab-main-container35">
+              <div class="ab-main-frame5 hoverbtnblue btn-close-modal2">
+                <span class="ab-main-text114"><span>확인</span></span>
+              </div>
+              <div id="stoptodaypopup" class="ab-main-container36">
+                <span class="ab-main-text116">오늘 하루 보이지 않기</span>
+                <input
+                  type="checkbox"
+                  checked="true"
+                  class="ab-main-checkbox"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ab-main-java-code-personal">
+          <div>
+            <dangerous-html
+              html="<link rel='stylesheet' href='css/Stock02.css'>
+
+<script type='text/javascript' src='/js/Stock0201main-tablepc.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="ab-main-modalfortemp">
+          <img
+            id="btn-modal1"
+            alt="Icontele21273"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a13bafc3-205d-4106-adc1-b311a55ef3ee/07b7cf3e-0e87-40df-bab1-d8b6c88719c7?org_if_sml=1728"
+            class="ab-main-icontele2 btn-close-modal1"
+          />
+          <img
+            id="btn-modal2"
+            alt="Icontele21273"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a13bafc3-205d-4106-adc1-b311a55ef3ee/b2f3fb10-4ebf-4380-bf41-f9c74291aec2?org_if_sml=1728"
+            class="ab-main-icontele21 btn-close-modal2"
+          />
+          <img
+            id="btn-modal3"
+            alt="Icontele21273"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/a13bafc3-205d-4106-adc1-b311a55ef3ee/b2f3fb10-4ebf-4380-bf41-f9c74291aec2?org_if_sml=1728"
+            class="ab-main-icontele22 btn-close-modal3"
+          />
+        </div>
+        <div
+          class="java-code-popup-modal-code-embed java-code-popup-modal-root-class-name5"
+        >
+          <div>
+            <dangerous-html
+              html="    <script type='text/javascript' src='/js/stockmodal1.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal2.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal3.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="ab-main-for-common-info">
+          <span id="topav1" class="ab-main-text117">Text</span>
+          <span id="topav2" class="ab-main-text118">Text</span>
+          <span id="topav3" class="ab-main-text119">Text</span>
+        </div>
+        <div
+          class="java-code-p-main-code-embed java-code-p-main-root-class-name"
+        >
+          <div>
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/stockcommonpc.js'> </script>
+
+<link rel='stylesheet' href='css/stockcommon.css'>"
+            ></dangerous-html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

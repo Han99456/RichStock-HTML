@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock</title>
+    <meta property="og:title" content="↗ Rich Stock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <link href="./ag-bank4.css" rel="stylesheet" />
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+
+      <div class="ag-bank4-container">
+        <div class="ag-bank4-sub-menu">
+          <div class="ag-bank4-small-header">
+            <div class="ag-bank4-frame31">
+              <a
+                href="ag-bank1.html"
+                class="ag-bank4-text hoverbtnSubmenublacktext"
+              >
+                계좌종합
+              </a>
+            </div>
+            <div class="ag-bank4-frame32">
+              <a
+                href="ag-bank2.html"
+                class="ag-bank4-text01 hoverbtnSubmenublacktext"
+              >
+                입금확인 요청
+              </a>
+            </div>
+            <div class="ag-bank4-frame33">
+              <a
+                href="ag-bank3.html"
+                class="ag-bank4-text02 hoverbtnSubmenublacktext"
+              >
+                출금신청
+              </a>
+            </div>
+            <div class="ag-bank4-frame331">
+              <a
+                href="ag-bank4.html"
+                class="ag-bank4-text03 hoverbtnSubmenublacktext"
+              >
+                입출금확인
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="user-info-user-info">
+          <div class="user-info-frame15">
+            <div class="user-info-container">
+              <span class="user-info-text"><span>계좌코드 :</span></span>
+              <span id="topAccCode" class="user-info-text1">
+                <span>-</span>
+              </span>
+              <span id="topuserid2" class="user-info-text2">
+                <span>-</span>
+              </span>
+            </div>
+            <div class="user-info-container1">
+              <div class="user-info-container2">
+                <img
+                  alt="AppTitleundefinedGlyphundefined1345"
+                  src="public/external/apptitleundefinedglyphundefined1345-a8pr.svg"
+                  class="user-info-app-titleundefined-glyphundefined"
+                />
+                <span class="user-info-text3"><span>주문가능금액 :</span></span>
+                <span id="topav" class="user-info-text4"><span>-</span></span>
+              </div>
+              <div class="user-info-container3">
+                <img
+                  alt="AppTitleundefinedGlyphundefined1345"
+                  src="public/external/apptitleundefinedglyphundefined1345-fkje.svg"
+                  class="user-info-app-titleundefined-glyphundefined1"
+                />
+                <span class="user-info-text5"><span>평가금액합계 :</span></span>
+                <span id="topmrg" class="user-info-text6"><span>-</span></span>
+              </div>
+              <div class="user-info-container4">
+                <img
+                  alt="AppTitleundefinedGlyphundefined1345"
+                  src="public/external/apptitleundefinedglyphundefined1345-fkje.svg"
+                  class="user-info-app-titleundefined-glyphundefined2"
+                />
+                <span class="user-info-text7"><span>예탁금 :</span></span>
+                <span id="topdep" class="user-info-text8"><span>-</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ag-bank4-space"></div>
+        <div class="ag-bank4-text04">
+          <div class="ag-bank4-container01">
+            <div class="ag-bank4-frame35">
+              <img
+                alt="Rectangle101345"
+                src="public/external/rectangle101345-ofr-200h.png"
+                class="ag-bank4-rectangle10"
+              />
+              <div class="ag-bank4-container02">
+                <div class="ag-bank4-container03">
+                  <div class="ag-bank4-container04">
+                    <img
+                      alt="ContentViewGalleryundefinedGlyphundefined1347"
+                      src="public/external/contentviewgalleryundefinedglyphundefined1347-m9gj.svg"
+                      class="ag-bank4-content-view-galleryundefined-glyphundefined"
+                    />
+                    <span class="ag-bank4-text05">입출금목록 조회</span>
+                  </div>
+                  <div class="ag-bank4-container05">
+                    <div id="mark7days" class="ag-bank4-frame140 hoverbtnblue">
+                      <span class="ag-bank4-text06">최근 7일</span>
+                      <svg viewBox="0 0 1024 1024" class="ag-bank4-icon">
+                        <path
+                          d="M320 384h128v128h-128zM512 384h128v128h-128zM704 384h128v128h-128zM128 768h128v128h-128zM320 768h128v128h-128zM512 768h128v128h-128zM320 576h128v128h-128zM512 576h128v128h-128zM704 576h128v128h-128zM128 576h128v128h-128zM832 0v64h-128v-64h-448v64h-128v-64h-128v1024h960v-1024h-128zM896 960h-832v-704h832v704z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div id="mark15days" class="ag-bank4-frame141 hoverbtnblue">
+                      <span class="ag-bank4-text07">최근 15일</span>
+                      <svg viewBox="0 0 1024 1024" class="ag-bank4-icon2">
+                        <path
+                          d="M320 384h128v128h-128zM512 384h128v128h-128zM704 384h128v128h-128zM128 768h128v128h-128zM320 768h128v128h-128zM512 768h128v128h-128zM320 576h128v128h-128zM512 576h128v128h-128zM704 576h128v128h-128zM128 576h128v128h-128zM832 0v64h-128v-64h-448v64h-128v-64h-128v1024h960v-1024h-128zM896 960h-832v-704h832v704z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div id="mark30days" class="ag-bank4-frame142 hoverbtnblue">
+                      <span class="ag-bank4-text08">최근 30일</span>
+                      <svg viewBox="0 0 1024 1024" class="ag-bank4-icon4">
+                        <path
+                          d="M320 384h128v128h-128zM512 384h128v128h-128zM704 384h128v128h-128zM128 768h128v128h-128zM320 768h128v128h-128zM512 768h128v128h-128zM320 576h128v128h-128zM512 576h128v128h-128zM704 576h128v128h-128zM128 576h128v128h-128zM832 0v64h-128v-64h-448v64h-128v-64h-128v1024h960v-1024h-128zM896 960h-832v-704h832v704z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ag-bank4-frame135">
+                    <img
+                      alt="Vector1346"
+                      src="public/external/vector1346-yajq.svg"
+                      class="ag-bank4-vector"
+                    />
+                    <input
+                      type="date"
+                      id="fromdate"
+                      class="ag-bank4-textinput input"
+                    />
+                    <span class="ag-bank4-text09">~</span>
+                    <input
+                      type="date"
+                      id="todate"
+                      class="ag-bank4-textinput1 input"
+                    />
+                  </div>
+                  <div id="searchBank" class="ag-bank4-frame5 hoverbtnblue">
+                    <span class="ag-bank4-text10">조회</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ag-bank4-space1"></div>
+        <div class="ag-bank4-table-3">
+          <div class="ag-bank4-table-title">
+            <div class="ag-bank4-notice">
+              <span class="ag-bank4-text11">입출금목록</span>
+            </div>
+          </div>
+          <div class="ag-bank4-table-top">
+            <img
+              alt="Rectangle1271"
+              src="public/external/rectangle1271-lkb6-200h.png"
+              class="ag-bank4-rectangle"
+            />
+            <div class="ag-bank4-container06">
+              <span class="ag-bank4-text12">신청일자</span>
+              <span class="ag-bank4-text13">구분</span>
+              <span class="ag-bank4-text14">금액</span>
+              <span class="ag-bank4-text15">상태</span>
+              <span class="ag-bank4-text16">승인일자</span>
+            </div>
+          </div>
+          <div
+            id="empty06-banking"
+            class="ag-bank4-container07 empty06-banking"
+          >
+            <span class="ag-bank4-text17">
+              요청하신 입출금 기록이 없습니다.
+            </span>
+          </div>
+          <div id="dataloading1" class="ag-bank4-container08 dataloading1">
+            <span class="ag-bank4-text18 loadingtext1">
+              고객님의 데이터를 불러오는 중입니다.
+            </span>
+          </div>
+          <div class="ag-bank4-table-list">
+            <div class="ag-bank4-container09 table-banking">
+              <div class="ag-bank4-line-white">
+                <div class="ag-bank4-bg"></div>
+                <div class="ag-bank4-text19">
+                  <span class="ag-bank4-text20">2024-04-30</span>
+                  <span class="ag-bank4-text21">입금</span>
+                  <span class="ag-bank4-text22">123,123,123원</span>
+                  <span class="ag-bank4-text23">처리중</span>
+                  <span class="ag-bank4-text24">-</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ag-bank4-line-end"><div class="ag-bank4-bg1"></div></div>
+          <div class="ag-bank4-page"></div>
+        </div>
+        <div class="ag-bank4-space2"></div>
+        <footer class="top-top">
+          <div class="top-container">
+            <div id="globaltext" class="top-container01">
+              <div class="top-group29">
+                <span class="top-text">KOSPI</span>
+                <span id="Bind1" class="top-text01">-</span>
+                <span id="Bind2" class="top-text02"><span>-</span></span>
+              </div>
+              <div class="top-group30">
+                <span class="top-text03"><span>KOSDAQ</span></span>
+                <span id="Bind3" class="top-text05">-</span>
+                <span id="Bind4" class="top-text06">-</span>
+              </div>
+              <div class="top-group31">
+                <span class="top-text07">NASDAQ</span>
+                <span id="Bind5" class="top-text08">-</span>
+                <span id="Bind6" class="top-text09">-</span>
+              </div>
+              <div class="top-group311">
+                <span class="top-text10">S&amp;P500</span>
+                <span id="Bind7" class="top-text11">-</span>
+                <span id="Bind8" class="top-text12">-</span>
+              </div>
+            </div>
+            <div class="top-container02"></div>
+          </div>
+          <div class="top-container03 dropdown1_Window">
+            <div class="top-container04">
+              <a href="af-trading1.html">
+                <div class="top-container05">
+                  <span class="top-text13 dropdown_text">
+                    <span>거래내역</span>
+                  </span>
+                </div>
+              </a>
+              <a href="af-trading2.html">
+                <div class="top-container06">
+                  <span class="top-text14 dropdown_text">
+                    <span>손익정보</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="top-top1">
+            <div class="top-frame26">
+              <div class="top-container07">
+                <span id="topuserid1" class="top-text15">-</span>
+                <span class="top-text16">&nbsp;님 방문을 환영합니다.</span>
+              </div>
+              <div class="top-container08">
+                <a href="ab-maind-cs.html" class="top-navlink02">
+                  <div class="top-group7 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon">
+                      <path
+                        d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM746.6 760.8c-177.6 0-239.2-80-272-179.6l-32.8-102.6c-24.6-75-53.4-133.4-143.6-133.4-62.6 0-126.2 45.2-126.2 171.4 0 98.6 50.2 160.2 121.2 160.2 80 0 133.4-59.6 133.4-59.6l32.8 89.2c0 0-55.4 54.4-171.4 54.4-144 0-224-84-224-240 0-162.2 80-257.6 231-257.6 136.6 0 205.2 49.2 248.4 182.6l33.8 102.6c24.6 75 67.8 129.4 171.4 129.4 69.8 0 106.8-15.4 106.8-53.4 0-29.8-17.4-51.4-69.8-63.6l-69.8-16.4c-85.2-20.6-119-64.6-119-134.4 0-111.8 90.4-146.8 182.6-146.8 104.6 0 168.4 38 176.6 130.4l-102.6 12.4c-4.2-44.2-30.8-62.6-80-62.6-45.2 0-72.8 20.6-72.8 55.4 0 30.8 13.4 49.2 58.4 59.6l65.6 14.4c88.2 20.6 135.4 63.6 135.4 146.8 0 102.2-86.2 141.2-213.4 141.2z"
+                      ></path>
+                    </svg>
+                    <span class="top-text17"><span>고객센터</span></span>
+                  </div>
+                </a>
+                <a href="ab-mainb-user-info.html" class="top-navlink03">
+                  <div class="top-group71 hoverbtnblue">
+                    <svg
+                      viewBox="0 0 1170.2857142857142 1024"
+                      class="top-icon2"
+                    >
+                      <path
+                        d="M512 692.571c0 41.714-27.429 75.429-61.143 75.429h-243.429c-33.714 0-61.143-33.714-61.143-75.429 0-75.429 18.286-162.286 93.714-162.286 22.857 22.857 54.286 36.571 89.143 36.571s66.286-13.714 89.143-36.571c75.429 0 93.714 86.857 93.714 162.286zM438.857 438.857c0 60.571-49.143 109.714-109.714 109.714s-109.714-49.143-109.714-109.714 49.143-109.714 109.714-109.714 109.714 49.143 109.714 109.714zM1024 676.571v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM804.571 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-182.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h182.857c10.286 0 18.286 8 18.286 18.286zM1024 530.286v36.571c0 10.286-8 18.286-18.286 18.286h-109.714c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h109.714c10.286 0 18.286 8 18.286 18.286zM1024 384v36.571c0 10.286-8 18.286-18.286 18.286h-402.286c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h402.286c10.286 0 18.286 8 18.286 18.286zM1097.143 859.429v-640h-1024v640c0 9.714 8.571 18.286 18.286 18.286h987.429c9.714 0 18.286-8.571 18.286-18.286zM1170.286 164.571v694.857c0 50.286-41.143 91.429-91.429 91.429h-987.429c-50.286 0-91.429-41.143-91.429-91.429v-694.857c0-50.286 41.143-91.429 91.429-91.429h987.429c50.286 0 91.429 41.143 91.429 91.429z"
+                      ></path>
+                    </svg>
+                    <span class="top-text18"><span>회원정보</span></span>
+                  </div>
+                </a>
+                <a href="index.html" class="top-navlink04">
+                  <div class="top-group72 hoverbtnblue">
+                    <svg viewBox="0 0 1024 1024" class="top-icon4">
+                      <path
+                        d="M384 512h-320v-128h320v-128l192 192-192 192zM1024 0v832l-384 192v-192h-384v-256h64v192h320v-576l256-128h-576v256h-64v-320z"
+                      ></path>
+                    </svg>
+                    <span class="top-text19"><span>로그인</span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="top-container09"></div>
+            <div class="top-frame13">
+              <div class="top-container10 dropmain">
+                <a
+                  href="ac-interested-stock01.html"
+                  class="top-text20 dropdown_text"
+                >
+                  <span>관심종목</span>
+                </a>
+                <div class="top-container11 dropdown1_Window">
+                  <div class="top-container12">
+                    <a href="ac-interested-stock01.html">
+                      <div class="top-container13">
+                        <span class="top-text22 dropdown_text">
+                          <span>관심종목 신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock02.html">
+                      <div class="top-container14">
+                        <span class="top-text23 dropdown_text">
+                          <span>관심종목 편집</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ac-interested-stock03.html">
+                      <div class="top-container15">
+                        <span class="top-text24 dropdown_text">
+                          <span>승인요청 목록</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ad-order.html" class="top-text25 dropdown_text">
+                <span>종합주문</span>
+              </a>
+              <a href="ae-over-night.html" class="top-text27 dropdown_text">
+                <span>오버나잇</span>
+              </a>
+              <div class="top-container16 dropmain">
+                <a href="af-trading1.html" class="top-text29 dropdown_text">
+                  <span>거래내역</span>
+                </a>
+              </div>
+              <div class="top-container17 dropmain">
+                <a href="ag-bank1.html" class="top-text31 dropdown_text">
+                  계좌종합
+                </a>
+                <div class="top-container18 dropdown1_Window">
+                  <div class="top-container19">
+                    <a href="ag-bank1.html">
+                      <div class="top-container20">
+                        <span class="top-text32 dropdown_text">
+                          <span>계좌종합</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank2.html">
+                      <div class="top-container21">
+                        <span class="top-text33 dropdown_text">
+                          <span>입금확인 요청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank3.html">
+                      <div class="top-container22">
+                        <span class="top-text34 dropdown_text">
+                          <span>출금신청</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a href="ag-bank4.html">
+                      <div class="top-container23">
+                        <span class="top-text35 dropdown_text">
+                          <span>입출금확인</span>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a href="ab-main.html" class="top-text36 hoverbtnSubmenubluetext">
+                RICHSTOCK
+              </a>
+            </div>
+          </div>
+        </footer>
+        <div class="ag-bank4-java-code-personal">
+          <div>
+            <dangerous-html
+              html="<link rel='stylesheet' href='css/Stock07.css'>
+
+<script type='text/javascript' src='/js/Stock0704-tablepc.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <div class="bottom-bottom">
+          <div class="bottom-container">
+            <span class="bottom-text">
+              <span>Copyright(c) 2023 RICHSTOCK All Right Reserved.</span>
+            </span>
+            <div class="bottom-frame-bg">
+              <a
+                href="ab-mainc-intro.html"
+                class="bottom-text02 hoverbtnblacktext"
+              >
+                <span>리치스탁 소개</span>
+              </a>
+              <a
+                href="ab-maine-rule.html"
+                class="bottom-text03 hoverbtnblacktext"
+              >
+                <span>거래 규정</span>
+              </a>
+              <a
+                href="ab-maind-cs.html"
+                class="bottom-text04 hoverbtnblacktext"
+              >
+                <span>고객센터</span>
+              </a>
+              <a
+                href="ab-mainf-tos.html"
+                class="bottom-text05 hoverbtnblacktext"
+              >
+                <span>이용약관</span>
+              </a>
+            </div>
+            <img
+              alt="Icontele21273"
+              src="public/external/icontele21273-gqug-200h.png"
+              class="bottom-icontele2"
+            />
+            <div class="bottom-frame18">
+              <span class="bottom-text06">Telegram. @rich110099</span>
+              <span class="bottom-text07">고객지원센터</span>
+              <a href="ab-maind-cs.html" class="bottom-navlink">
+                <img
+                  alt="HeadsetundefinedGlyphundefined1273"
+                  src="public/external/headsetundefinedglyphundefined1273-h5.svg"
+                  class="bottom-headsetundefined-glyphundefined"
+                />
+              </a>
+            </div>
+            <a href="ab-main.html" class="bottom-text08 hoverbtnblacktext">
+              <span>RICHSTOCK</span>
+            </a>
+          </div>
+        </div>
+        <div class="ag-bank4-for-common-info">
+          <span id="topav1" class="ag-bank4-text25">Text</span>
+          <span id="topav2" class="ag-bank4-text26">Text</span>
+          <span id="topav3" class="ag-bank4-text27">Text</span>
+        </div>
+        <div
+          class="java-code-p-main-code-embed java-code-p-main-root-class-name16"
+        >
+          <div>
+            <dangerous-html
+              html="<script type='text/javascript' src='/js/stockcommonpc.js'> </script>
+
+<link rel='stylesheet' href='css/stockcommon.css'>"
+            ></dangerous-html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

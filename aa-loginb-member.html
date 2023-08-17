@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>↗ Rich Stock</title>
+    <meta property="og:title" content="↗ Rich Stock" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximun-scale=1, width=device-width"
+    />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/pavi.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inder:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Junge:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./air-datepicker/dist/css/datepicker.min.css"
+    />
+
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./air-datepicker/jquery-3.1.1.min.js"></script>
+    <script src="./air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="./air-datepicker/dist/js/i18n/datepicker.ko.js"></script>
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+      ></script>
+      <link href="./aa-loginb-member.css" rel="stylesheet" />
+
+      <div class="aa-loginb-member-container">
+        <div class="aa-loginb-member-frame000-member">
+          <img
+            alt="BG1208"
+            src="public/external/bg1208-zjf-1500w.png"
+            class="aa-loginb-member-bg"
+          />
+          <div class="aa-loginb-member-frame9">
+            <span class="aa-loginb-member-text">
+              <span class="aa-loginb-member-text01">*</span>
+              <span>표기는 필수 입력사항입니다.</span>
+              <br />
+              <span>회원정보는 가입 후, 자유로이 변경 가능합니다.</span>
+            </span>
+            <span id="title" class="aa-loginb-member-text05">
+              <span>회원가입</span>
+              <span></span>
+            </span>
+            <img
+              alt="Line11209"
+              src="public/external/line11209-01vd.svg"
+              class="aa-loginb-member-line1"
+            />
+            <img
+              alt="Line21201"
+              src="public/external/line11209-01vd.svg"
+              class="aa-loginb-member-line2"
+            />
+            <img
+              alt="Line31201"
+              src="public/external/line11209-01vd.svg"
+              class="aa-loginb-member-line3"
+            />
+            <span class="aa-loginb-member-text08"><span>RICHSTOCK</span></span>
+            <form class="aa-loginb-member-form-userinfo">
+              <div class="aa-loginb-member-frame10">
+                <input
+                  type="text"
+                  id="userId"
+                  autofocus=""
+                  placeholder="ID 입력"
+                  class="aa-loginb-member-input-id input"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="비밀번호 입력"
+                  class="aa-loginb-member-input-pw input"
+                />
+                <input
+                  type="password"
+                  id="repassword"
+                  placeholder="비밀번호 재입력"
+                  class="aa-loginb-member-input-re-pw input"
+                />
+                <div class="aa-loginb-member-frame">
+                  <span class="aa-loginb-member-text10">
+                    <span class="aa-loginb-member-text11">*</span>
+                    <span>아이디를 입력해주세요.</span>
+                  </span>
+                  <span class="aa-loginb-member-text13">
+                    <span>4~12글자의 영문과 숫자</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame01">
+                  <span class="aa-loginb-member-text15">
+                    <span class="aa-loginb-member-text16">*</span>
+                    <span>비밀번호를 입력해주세요.</span>
+                  </span>
+                  <span class="aa-loginb-member-text18">
+                    <span>4~12글자의 영문과 숫자</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame02">
+                  <span class="aa-loginb-member-text20">
+                    <span class="aa-loginb-member-text21">*</span>
+                    <span>비밀번호를</span>
+                    <br />
+                    <span>다시 입력해주세요.</span>
+                  </span>
+                </div>
+              </div>
+              <div class="aa-loginb-member-frame03">
+                <input
+                  type="text"
+                  id="telegram"
+                  placeholder="텔레그램 ID 입력"
+                  class="aa-loginb-member-input-snsid input"
+                />
+                <span class="aa-loginb-member-text25">
+                  <span class="aa-loginb-member-text26">
+                    리치스탁은 주문과 체결 등
+                  </span>
+                  <span class="aa-loginb-member-text27">[중요 정보]</span>
+                  <span class="aa-loginb-member-text28">를</span>
+                  <span class="aa-loginb-member-text29">텔레그램 알림</span>
+                  <span class="aa-loginb-member-text30">으로</span>
+                  <br class="aa-loginb-member-text31" />
+                  <span class="aa-loginb-member-text32">
+                    전달드립니다. 알림 연동 신청을 꼭 진행해주세요.
+                  </span>
+                  <br class="aa-loginb-member-text33" />
+                </span>
+                <span class="aa-loginb-member-text34">
+                  <span class="aa-loginb-member-text35">연동 방법</span>
+                  <br />
+                  <span>
+                    &nbsp; 1. @표기를 제외한 텔레그램 아이디를 정확하게
+                    입력해주세요.
+                  </span>
+                  <br />
+                  <span>&nbsp; 2.&nbsp;</span>
+                  <span class="aa-loginb-member-text40">
+                    [텔레그램 알림 연동]
+                  </span>
+                  <span>버튼 선택 후, 시작하기 버튼을 눌러주세요.</span>
+                  <br />
+                </span>
+                <span class="aa-loginb-member-text43">@</span>
+                <span class="aa-loginb-member-text44">
+                  <span class="aa-loginb-member-text45">*</span>
+                  <span>거래 알림 서비스</span>
+                </span>
+                <a
+                  href="https://t.me/rich110099_bot"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="aa-loginb-member-link"
+                >
+                  <div
+                    id="telejoin"
+                    class="aa-loginb-member-container01 hoverbtnblue"
+                  >
+                    <span class="aa-loginb-member-text47">
+                      텔레그램 알림 연동
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="aa-loginb-member-frame11">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="이름 입력"
+                  class="aa-loginb-member-input-name input"
+                />
+                <input
+                  type="text"
+                  id="bankName"
+                  placeholder="출금은행 입력"
+                  class="aa-loginb-member-input-email input"
+                />
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="이메일 입력"
+                  class="aa-loginb-member-input-mobile input"
+                />
+                <input
+                  type="text"
+                  id="bankAccount"
+                  placeholder="계좌번호 입력"
+                  class="aa-loginb-member-input-bankname input"
+                />
+                <input
+                  type="number"
+                  id="mobile"
+                  placeholder="전화번호 입력"
+                  class="aa-loginb-member-input-bank-address input"
+                />
+                <input
+                  type="text"
+                  id="bankDepositor"
+                  placeholder="예금주 입력"
+                  class="aa-loginb-member-input-bank-order input"
+                />
+                <div class="aa-loginb-member-frame04">
+                  <span class="aa-loginb-member-text48">
+                    <span class="aa-loginb-member-text49">*</span>
+                    <span class="aa-loginb-member-text50">이름</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame05">
+                  <span class="aa-loginb-member-text51">
+                    <span class="aa-loginb-member-text52">*</span>
+                    <span>이메일</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame06">
+                  <span class="aa-loginb-member-text54">
+                    <span class="aa-loginb-member-text55">*</span>
+                    <span>전화번호</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame07">
+                  <span class="aa-loginb-member-text57">
+                    <span class="aa-loginb-member-text58">*</span>
+                    <span>출금은행</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame08">
+                  <span class="aa-loginb-member-text60">
+                    <span class="aa-loginb-member-text61">*</span>
+                    <span>계좌번호</span>
+                  </span>
+                </div>
+                <div class="aa-loginb-member-frame09">
+                  <span class="aa-loginb-member-text63">
+                    <span class="aa-loginb-member-text64">*</span>
+                    <span>예금주</span>
+                  </span>
+                </div>
+              </div>
+            </form>
+            <div class="aa-loginb-member-frame6">
+              <div class="aa-loginb-member-container02">
+                <span class="aa-loginb-member-text66">
+                  회원가입과 함께 이용약관에 동의합니다.
+                </span>
+                <a href="aa-logind-tos.html" class="aa-loginb-member-btn-tos">
+                  이용약관
+                </a>
+              </div>
+            </div>
+            <span class="aa-loginb-member-text67"><span>welcome</span></span>
+            <span class="aa-loginb-member-text69">
+              <span>Copyright RICHSTOCK All Right Reserved.</span>
+            </span>
+            <div class="aa-loginb-member-group47">
+              <a href="index.html" class="aa-loginb-member-navlink">
+                <div class="aa-loginb-member-btn-cancel">
+                  <span class="aa-loginb-member-text71"><span>취소</span></span>
+                </div>
+              </a>
+              <button
+                id="memberinfo"
+                type="button"
+                class="aa-loginb-member-button hoverbtngray"
+              >
+                회원가입 신청
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="modal1" class="aa-loginb-member-modal1 modal-overlay1">
+          <div class="aa-loginb-member-frame000-member-tos">
+            <div class="aa-loginb-member-container03">
+              <img
+                alt="Rectangle21209"
+                src="public/external/rectangle21209-4h1-200h.png"
+                class="aa-loginb-member-rectangle2"
+              />
+              <div class="aa-loginb-member-info">
+                <img
+                  alt="UnionI120"
+                  src="public/external/unioni120-xae8.svg"
+                  class="aa-loginb-member-union"
+                />
+              </div>
+              <span class="aa-loginb-member-text73">회원가입 안내</span>
+            </div>
+            <div class="aa-loginb-member-container04"></div>
+            <div class="aa-loginb-member-container05">
+              <span class="aa-loginb-member-text74">
+                <span>회원 가입신청을 완료했습니다.</span>
+                <br />
+                <span>관리자 승인 후, 로그인 하실 수 있습니다.</span>
+                <br />
+                <br />
+                <span>빠른 로그인이 필요하신 경우,</span>
+                <br />
+                <span>고객센터로 문의주세요.</span>
+              </span>
+            </div>
+            <div class="aa-loginb-member-container06"></div>
+            <div class="aa-loginb-member-container07">
+              <a href="index.html" class="aa-loginb-member-navlink1">
+                <div
+                  class="aa-loginb-member-container08 btn-close-modal1 button hoverbtnblue"
+                >
+                  <span class="aa-loginb-member-text83">확인</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="modal2" class="aa-loginb-member-modal2 modal-overlay2">
+          <div class="aa-loginb-member-frame000-member-tos1">
+            <div class="aa-loginb-member-container09">
+              <img
+                alt="Rectangle21209"
+                src="public/external/rectangle21209-4h1-200h.png"
+                class="aa-loginb-member-rectangle21"
+              />
+              <div class="aa-loginb-member-info1">
+                <img
+                  alt="UnionI120"
+                  src="public/external/unioni120-xae8.svg"
+                  class="aa-loginb-member-union1"
+                />
+              </div>
+              <span class="aa-loginb-member-text84">회원가입 안내</span>
+            </div>
+            <div class="aa-loginb-member-container10"></div>
+            <div class="aa-loginb-member-container11">
+              <span class="aa-loginb-member-text85">
+                <span>필수 회원정보를 모두 기입해주세요.</span>
+                <br />
+              </span>
+            </div>
+            <div class="aa-loginb-member-container12"></div>
+            <div class="aa-loginb-member-container13">
+              <div class="button hoverbtnblue btn-close-modal2">
+                <span class="aa-loginb-member-text88">확인</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aa-loginb-member-java-code-personal">
+          <div>
+            <dangerous-html
+              html="    <script type='text/javascript' src='/js/stock0102member.js'> </script>
+
+    <script>
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+for (var word in mobileKeyWords){
+  if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+    parent.window.location.href='/ma-logina.html';
+    break;
+  }
+}
+</script>"
+            ></dangerous-html>
+          </div>
+        </div>
+        <img
+          id="btn-modal1"
+          alt="Icontele21273"
+          src="public/external/icontele21273-gqug-200h.png"
+          class="aa-loginb-member-icontele2 btn-close-modal1"
+        />
+        <img
+          id="btn-modal2"
+          alt="Icontele21273"
+          src="public/external/icontele21273-gqug-200h.png"
+          class="aa-loginb-member-icontele21 btn-close-modal2"
+        />
+        <div class="aa-loginb-member-code-embed">
+          <div>
+            <dangerous-html
+              html="    <script type='text/javascript' src='/js/stockmodal1.js'> </script>
+    <script type='text/javascript' src='/js/stockmodal2.js'> </script>"
+            ></dangerous-html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
